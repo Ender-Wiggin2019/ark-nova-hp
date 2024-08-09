@@ -1,4 +1,3 @@
-// import { useUser } from '@clerk/nextjs';
 import { useQuery } from '@tanstack/react-query';
 import React, { useEffect, useMemo } from 'react';
 

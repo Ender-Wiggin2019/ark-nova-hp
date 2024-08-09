@@ -1,4 +1,10 @@
-import { ClerkProvider } from '@clerk/nextjs';
+/*
+ * @Author: Ender-Wiggin
+ * @Date: 2024-08-10 00:35:54
+ * @LastEditors: Ender-Wiggin
+ * @LastEditTime: 2024-08-10 00:44:40
+ * @Description:
+ */
 import { AppProps } from 'next/app';
 import Script from 'next/script';
 import { appWithTranslation } from 'next-i18next';
@@ -36,9 +42,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         `,
         }}
       />
-      <ClerkProvider {...pageProps}>
-        <Component {...pageProps} />
-      </ClerkProvider>
+      <Component {...pageProps} />
     </>
   );
 }

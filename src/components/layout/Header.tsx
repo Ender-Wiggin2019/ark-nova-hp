@@ -10,15 +10,8 @@ import { cn } from '@/lib/utils';
 
 import LocaleSelector from '@/components/layout/LocaleSelector';
 import { Container } from '@/components/ui/Container';
-import { Tooltip } from '@/components/ui/Tooltip2';
 
 import { NavigationBar } from './NavigationBar';
-import {
-  GitHubBrandIcon,
-  GoogleBrandIcon,
-  MailIcon,
-  UserArrowLeftIcon,
-} from '../../../public';
 
 export function Header() {
   const isHomePage = usePathname() === '/';

@@ -9,7 +9,6 @@ import { AnimalModelCard } from '@/components/cards/animal_cards/models/AnimalMo
 import { BaseEndGameCard } from '@/components/cards/endgame_cards/BaseEndGameCard';
 import { EndGameHoverCard } from '@/components/cards/endgame_cards/EndGameHoverCard';
 import { BaseSponsorCard } from '@/components/cards/sponsor_cards/BaseSponsorCard';
-import { Comments } from '@/components/comments/Comments';
 // make sure to import your TextFilter
 import Layout from '@/components/layout/Layout';
 import Seo from '@/components/Seo';
@@ -75,8 +74,6 @@ export default function Page(
             </div>
           ) : null}
         </div>
-
-        <Comments cardId={router.query.id} />
       </div>
     </Layout>
   );

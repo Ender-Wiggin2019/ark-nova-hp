@@ -397,7 +397,7 @@
 }
 
 .filter-button .badge-icon {
-  border: 2px solid #fff;
+  /* border: 2px solid #fff; */
   border-radius: 50%;
   height: 60px;
   width: 60px;
@@ -3534,7 +3534,7 @@
   background-position-y: 33.3333333333%;
 }
 
-.badge-icon[data-type='Appeal'] {
+.badge-icon[data-type='Chimera'] {
   background-position-x: 0;
   background-position-y: 50%;
 }
@@ -3554,7 +3554,7 @@
   background-position-y: 50%;
 }
 
-.badge-icon[data-type='Upgrade'] {
+.badge-icon[data-type='Dragon'] {
   background-position-x: 100%;
   background-position-y: 50%;
 }

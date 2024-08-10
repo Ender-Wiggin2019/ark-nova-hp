@@ -41,7 +41,7 @@ export const TextFilter: React.FC<TextFilterProps> = ({
   return (
     <div
       className={cn(
-        'group relative flex w-full rounded-xl bg-gradient-to-b from-zinc-50/50 to-white/70 p-2 pb-6 shadow-xl shadow-zinc-500/10 ring-2 ring-zinc-200/30 transition-opacity [--spotlight-color:rgb(236_252_203_/_0.25)] dark:from-zinc-900/70 dark:to-zinc-800/60 dark:shadow-zinc-700/10 dark:ring-zinc-700/30 dark:[--spotlight-color:rgb(217_249_157_/_0.04)] md:p-4 lg:w-1/2'
+        'hp-button group relative flex w-full rounded-xl p-2 pb-6 shadow-xl shadow-zinc-500/10 ring-2 ring-hp-ring transition-opacity [--spotlight-color:rgb(236_252_203_/_0.25)] dark:from-zinc-900/70 dark:to-zinc-800/60 dark:shadow-zinc-700/10 dark:ring-zinc-700/30 dark:[--spotlight-color:rgb(217_249_157_/_0.04)] md:p-4 lg:w-1/2'
       )}
       onMouseMove={handleMouseMove}
     >
@@ -86,7 +86,7 @@ export const TextFilter: React.FC<TextFilterProps> = ({
 
       <div className='z-10 ml-2 flex-1 shrink-0 md:ml-4'>
         <input
-          className='block w-full shrink-0 resize-none border-0 bg-transparent p-0 text-sm leading-6 text-zinc-800 placeholder-zinc-400 outline-none transition-[height] will-change-[height] focus:outline-none focus:ring-0 dark:text-zinc-200 dark:placeholder-zinc-500'
+          className='block w-full shrink-0 resize-none border-0 bg-transparent p-0 text-sm leading-6 text-white placeholder-zinc-400 outline-none transition-[height] will-change-[height] focus:outline-none focus:ring-0'
           value={text}
           placeholder={t('Filter text') + '...'}
           onChange={(event) => handleChange(event.target.value)}

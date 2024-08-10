@@ -11,6 +11,9 @@ export enum AnimalTag {
   Bear = 'bear',
   // Marine World
   SeaAnimal = 'seaAnimal',
+  // hp
+  Dragon = 'dragon',
+  Chimera = 'chimera',
 }
 
 export enum ContinentTag {

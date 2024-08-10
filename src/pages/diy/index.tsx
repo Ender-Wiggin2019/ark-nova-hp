@@ -183,7 +183,7 @@ export default function Page(
               {/*  {t('diy.import_json')}*/}
               {/*</Button>*/}
               <Button
-                className='w-36 bg-lime-500 hover:bg-lime-400'
+                className='w-36 bg-amber-500 hover:bg-amber-400'
                 onClick={handleDownloadImage}
               >
                 {t('diy.Download')}

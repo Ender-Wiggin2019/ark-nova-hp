@@ -26,8 +26,8 @@ html.dark {
 }
 
 ::selection {
-  background-color: theme('colors.lime.300');
-  color: theme('colors.lime.950');
+  background-color: theme('colors.amber.300');
+  color: theme('colors.amber.950');
 }
 
 @keyframes typing-pulse {
@@ -124,6 +124,21 @@ html.dark {
   @apply z-10 duration-500 lg:hover:z-[99999] lg:hover:scale-[200%];
 }
 
+.hp-button {
+  @apply bg-gradient-to-r from-[#59479f] to-[#4648af] text-white;
+}
+
+.hp-golden {
+  @apply bg-gradient-to-r from-hp-gold2 to-hp-gold3;
+}
+
+.hp-text {
+  @apply text-[#d2aa6b];
+}
+
+.outer-glow {
+  box-shadow: 0 0 10px 2px #feebca;
+}
 .animal-title {
   background: #eb8a00;
   background: linear-gradient(90deg, #eb8a00 15%, #fcbd1a 50%, #eb8a00 85%);

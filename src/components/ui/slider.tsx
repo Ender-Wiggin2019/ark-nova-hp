@@ -1,3 +1,10 @@
+/*
+ * @Author: Ender-Wiggin
+ * @Date: 2024-08-10 00:35:54
+ * @LastEditors: Ender-Wiggin
+ * @LastEditTime: 2024-08-10 23:45:31
+ * @Description:
+ */
 'use client';
 
 import * as SliderPrimitive from '@radix-ui/react-slider';
@@ -11,24 +18,6 @@ const Slider = React.forwardRef<
     color?: string;
   }
 >(({ className, color = 'amber', ...props }, ref) => {
-  const colorClasses = {
-    bg: 'bg-amber-800',
-    border: 'border-amber-800',
-  };
-
-  switch (color) {
-    case 'blue':
-      colorClasses.bg = 'bg-blue-500';
-      colorClasses.border = 'border-blue-500';
-      break;
-    case 'zinc':
-      colorClasses.bg = 'bg-zinc-900';
-      colorClasses.border = 'border-zinc-900';
-      break;
-    default:
-      break;
-  }
-
   return (
     <SliderPrimitive.Root
       ref={ref}
@@ -38,13 +27,11 @@ const Slider = React.forwardRef<
       )}
       {...props}
     >
-      <SliderPrimitive.Track className='relative h-2 w-full grow overflow-hidden rounded-full bg-zinc-500/50 dark:bg-zinc-800'>
-        <SliderPrimitive.Range
-          className={`absolute h-full ${colorClasses.bg} dark:bg-zinc-50`}
-        />
+      <SliderPrimitive.Track className='relative h-2 w-full grow overflow-hidden rounded-full bg-transparent/30'>
+        <SliderPrimitive.Range className='absolute h-full bg-hp-gold dark:bg-zinc-50' />
       </SliderPrimitive.Track>
       <SliderPrimitive.Thumb
-        className={`block h-5 w-5 rounded-full border-2 ${colorClasses.border} bg-white ring-offset-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-zinc-400 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 `}
+        className={`block h-5 w-5 rounded-full border-2 bg-white ring-offset-hp-gold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-zinc-400 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 `}
       />
     </SliderPrimitive.Root>
   );

@@ -23,15 +23,13 @@ function NavItem({
         href={href}
         className={cn(
           'relative block whitespace-nowrap px-3 py-2 transition',
-          isActive
-            ? 'text-lime-600 dark:text-lime-400'
-            : 'hover:text-lime-600 dark:hover:text-lime-400'
+          isActive ? 'text-hp-gold' : 'hover:text-hp-gold'
         )}
       >
         {children}
         {isActive && (
           <motion.span
-            className='absolute inset-x-1 -bottom-px h-px bg-gradient-to-r from-lime-700/0 via-lime-700/70 to-lime-700/0 dark:from-lime-400/0 dark:via-lime-400/40 dark:to-lime-400/0'
+            className='hp-golden absolute inset-x-1 bottom-1 h-px'
             layoutId='active-nav-item'
           />
         )}
@@ -54,7 +52,7 @@ function Desktop({
       const bounds = currentTarget.getBoundingClientRect();
       mouseX.set(clientX - bounds.left);
       mouseY.set(clientY - bounds.top);
-      radius.set(Math.sqrt(bounds.width ** 2 + bounds.height ** 2) / 2.5);
+      radius.set(Math.sqrt(bounds.width ** 2 + bounds.height ** 2) / 5);
     },
     [mouseX, mouseY, radius]
   );
@@ -65,10 +63,10 @@ function Desktop({
       onMouseMove={handleMouseMove}
       className={cn(
         'group relative',
-        'rounded-full bg-gradient-to-b from-zinc-50/70 to-white/90',
-        'shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur-md',
+        'rounded-full bg-hp-dark',
+        'shadow-sm shadow-zinc-800/5 ring-2 ring-hp-ring backdrop-blur-sm',
         'dark:from-zinc-900/70 dark:to-zinc-800/90 dark:ring-zinc-100/10',
-        '[--spotlight-color:rgb(236_252_203_/_0.6)] dark:[--spotlight-color:rgb(217_249_157_/_0.07)]',
+        '[--spotlight-color:rgb(150_137_252_/_0.2)]',
         className
       )}
       {...props}
@@ -80,7 +78,7 @@ function Desktop({
         aria-hidden='true'
       />
 
-      <ul className='flex bg-transparent px-3 text-sm font-medium text-zinc-800 dark:text-zinc-200 '>
+      <ul className='flex bg-transparent px-3 text-sm font-medium text-white dark:text-zinc-200 '>
         {navigationItems.map(({ href, text }) => (
           <NavItem key={href} href={href}>
             {t(text)}
@@ -111,7 +109,7 @@ function Mobile(props: PopoverProps<'div'>) {
   const { t } = useTranslation('common');
   return (
     <Popover {...props}>
-      <Popover.Button className='group flex w-28 items-center justify-between rounded-full bg-gradient-to-b from-zinc-50/20 to-white/80 px-4 py-2 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur-md focus:outline-none focus-visible:ring-2 dark:from-zinc-900/30 dark:to-zinc-800/80 dark:text-zinc-200 dark:ring-white/10 dark:hover:ring-white/20 dark:focus-visible:ring-yellow-500/80'>
+      <Popover.Button className='hp-button group flex w-28 items-center justify-between rounded-full px-4 py-2 text-sm font-medium text-white shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur-md focus:outline-none focus-visible:ring-2 dark:from-zinc-900/30 dark:to-zinc-800/80 dark:text-zinc-200 dark:ring-white/10 dark:hover:ring-white/20 dark:focus-visible:ring-yellow-500/80'>
         {t('nav.go')}
         {/* Chevron */}
         <svg

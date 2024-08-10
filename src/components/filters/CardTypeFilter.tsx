@@ -43,8 +43,8 @@ export const CardTypeFilter: React.FC<CardTypeFilterProps> = ({
       {cardTypes.includes(CardType.ANIMAL_CARD) && (
         <TextButton
           selected={selectedCategories.includes(CardType.ANIMAL_CARD)}
-          className='hover:text-amber-500'
-          selectClassName='text-amber-500 ring-amber-500/90 ring-2'
+          className='hover:text-hp-gold'
+          selectClassName='text-hp-gold ring-amber-500/90 ring-2'
           onClick={() => handleCategoryChange(CardType.ANIMAL_CARD)}
         >
           {t('Animal Card')}
@@ -53,8 +53,8 @@ export const CardTypeFilter: React.FC<CardTypeFilterProps> = ({
       {cardTypes.includes(CardType.SPONSOR_CARD) && (
         <TextButton
           selected={selectedCategories.includes(CardType.SPONSOR_CARD)}
-          className='hover:text-sky-600'
-          selectClassName='text-sky-600 ring-sky-600/90 ring-2'
+          className='hover:text-hp-gold'
+          selectClassName='text-hp-gold ring-sky-600/90 ring-2'
           onClick={() => handleCategoryChange(CardType.SPONSOR_CARD)}
         >
           {t('Sponsor Card')}
@@ -63,8 +63,8 @@ export const CardTypeFilter: React.FC<CardTypeFilterProps> = ({
       {cardTypes.includes(CardType.CONSERVATION_CARD) && (
         <TextButton
           selected={selectedCategories.includes(CardType.CONSERVATION_CARD)}
-          className='hover:text-lime-500'
-          selectClassName='text-lime-500 ring-lime-500/90 ring-2'
+          className='hover:text-hp-gold'
+          selectClassName='text-hp-gold ring-green-700/90 ring-2'
           onClick={() => handleCategoryChange(CardType.CONSERVATION_CARD)}
         >
           {t('Conservation Projects')}
@@ -73,7 +73,7 @@ export const CardTypeFilter: React.FC<CardTypeFilterProps> = ({
       {cardTypes.includes(CardType.END_GAME_CARD) && (
         <TextButton
           selected={selectedCategories.includes(CardType.END_GAME_CARD)}
-          className='hover:text-amber-800'
+          className='hover:text-hp-gold'
           selectClassName='text-amber-800 ring-amber-800/90 ring-2'
           onClick={() => handleCategoryChange(CardType.END_GAME_CARD)}
         >

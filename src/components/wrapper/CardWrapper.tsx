@@ -67,7 +67,7 @@ const CardWrapper: React.FC<CardWrapperProps> = ({
   return (
     <div
       className={cn('player-board-hand w-min cursor-pointer', {
-        'rounded-sm ring-4 ring-lime-500 ring-offset-2': selected,
+        'rounded-sm ring-4 ring-amber-500 ring-offset-2': selected,
         preview: preview,
 
         'cursor-auto': !canSelect,

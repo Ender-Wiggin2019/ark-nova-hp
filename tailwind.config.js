@@ -1,3 +1,10 @@
+/*
+ * @Author: Ender-Wiggin
+ * @Date: 2024-08-10 00:35:54
+ * @LastEditors: Ender-Wiggin
+ * @LastEditTime: 2024-08-11 00:00:46
+ * @Description:
+ */
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: ['class'],
@@ -17,6 +24,14 @@ module.exports = {
     },
     extend: {
       colors: {
+        hp: {
+          ring: '#9689fc',
+          gold: '#ecbf77',
+          dark: '#161244',
+          gold2: '#f5e2d8',
+          gold3: '#fadb9c',
+        },
+
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
         ring: 'hsl(var(--ring))',

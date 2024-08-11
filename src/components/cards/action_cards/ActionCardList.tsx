@@ -1,3 +1,10 @@
+/*
+ * @Author: Ender-Wiggin
+ * @Date: 2024-08-10 00:35:54
+ * @LastEditors: Ender-Wiggin
+ * @LastEditTime: 2024-08-11 02:21:41
+ * @Description:
+ */
 import React from 'react';
 
 import CardList from '@/components/cards/shared/CardList';
@@ -47,10 +54,8 @@ const filterAnimals = (
         (animal.latinName !== undefined &&
           animal.latinName.toLowerCase().includes(lowercaseFilter)) ||
         (animal.abilities !== undefined &&
-          animal.abilities.some(
-            (ability) =>
-              ability.title.toLowerCase().includes(lowercaseFilter) ||
-              ability.description.toLowerCase().includes(lowercaseFilter)
+          animal.abilities.some((ability) =>
+            ability.includes(lowercaseFilter)
           )))
   );
 };

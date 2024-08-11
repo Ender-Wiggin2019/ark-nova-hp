@@ -5,7 +5,6 @@ import {
   EndangeredCategory,
   EndangeredCategorySchema,
 } from '@/types/EndangeredCategory';
-import { Ability } from '@/types/KeyWords';
 import {
   SpecialEnclosure,
   SpecialEnclosureSchema,
@@ -16,11 +15,12 @@ import { Tag, TagSchema } from '@/types/Tags';
 export interface AnimalCard {
   id: string;
   name: string;
+  cnName?: string;
   latinName?: string;
   endangeredCategory?: EndangeredCategory;
   image?: string;
 
-  // upper
+  // 用于进行筛选的信息
   size: number; // Size;
   rock?: number;
   water?: number;
@@ -31,10 +31,10 @@ export interface AnimalCard {
   specialEnclosures?: SpecialEnclosure[];
 
   // middle
-  abilities?: Ability[];
+  abilities?: string[];
   description?: string;
-  reefDwellerEffect?: Ability[];
-  soloEffect?: Ability[];
+  reefDwellerEffect?: string[];
+  soloEffect?: string[];
   wave?: boolean;
 
   // bottom

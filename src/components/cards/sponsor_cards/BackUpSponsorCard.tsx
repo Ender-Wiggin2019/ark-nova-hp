@@ -2,7 +2,7 @@
  * @Author: Ender-Wiggin
  * @Date: 2024-08-10 00:35:54
  * @LastEditors: Ender-Wiggin
- * @LastEditTime: 2024-08-11 20:45:49
+ * @LastEditTime: 2024-08-11 20:47:31
  * @Description:
  */
 import { useTranslation } from 'next-i18next';

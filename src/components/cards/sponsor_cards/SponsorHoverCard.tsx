@@ -1,3 +1,10 @@
+/*
+ * @Author: Ender-Wiggin
+ * @Date: 2024-08-10 00:35:54
+ * @LastEditors: Ender-Wiggin
+ * @LastEditTime: 2024-08-11 20:41:51
+ * @Description:
+ */
 import { Separator } from '@/components/ui/separator';
 
 interface HoverCardProps {
@@ -9,32 +16,15 @@ interface HoverCardProps {
 import Link from 'next/link';
 import { useTranslation } from 'next-i18next';
 import React from 'react';
-import { Rating } from 'react-simple-star-rating';
 
 export const SponsorHoverCard: React.FC<HoverCardProps> = ({
   id,
   showLink,
-  rating,
-  ratingCount,
 }) => {
   // const router = useRouter();
   const { t } = useTranslation('common');
   return (
     <div className='flex flex-col text-xs'>
-      {rating && (
-        <div className='flex flex-row gap-1'>
-          <Rating
-            emptyStyle={{ display: 'flex' }}
-            fillStyle={{ display: '-webkit-inline-box' }}
-            className='-mt-1'
-            readonly={true}
-            initialValue={rating}
-            allowFraction={true}
-            size={16}
-          />
-          {rating ? `${rating.toFixed(1)} (${ratingCount} ${t('users')})` : ''}
-        </div>
-      )}
       {showLink && (
         <div className='flex flex-col items-center'>
           <Separator className='my-2 bg-zinc-300' />

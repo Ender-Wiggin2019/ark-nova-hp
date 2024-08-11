@@ -1,3 +1,10 @@
+/*
+ * @Author: Ender-Wiggin
+ * @Date: 2024-08-10 00:35:54
+ * @LastEditors: Ender-Wiggin
+ * @LastEditTime: 2024-08-11 20:41:21
+ * @Description:
+ */
 import React from 'react';
 
 import { SponsorHoverCard } from '@/components/cards/sponsor_cards/SponsorHoverCard';
@@ -9,10 +16,10 @@ import {
 
 import { BaseSponsorCard } from './BaseSponsorCard';
 
-import { ISponsorCard } from '@/types/ISponsorCard';
+import { SponsorCard } from '@/types/SponsorCard';
 
 interface RatedSponsorCardProps {
-  cardData: ISponsorCard;
+  cardData: SponsorCard;
   showLink: boolean;
 }
 
@@ -20,7 +27,7 @@ export const RatedSponsorCard: React.FC<RatedSponsorCardProps> = ({
   cardData,
   showLink,
 }) => {
-  const { sponsorCard, rating, ratingCount } = cardData;
+  const sponsorCard = cardData;
 
   return (
     <>
@@ -29,12 +36,7 @@ export const RatedSponsorCard: React.FC<RatedSponsorCardProps> = ({
           <BaseSponsorCard sponsor={sponsorCard} />
         </PopoverTrigger>
         <PopoverContent className='z-20 -mt-56 w-48 bg-zinc-50/95 p-2 md:-mt-64 md:w-52'>
-          <SponsorHoverCard
-            id={sponsorCard.id}
-            showLink={showLink}
-            rating={rating}
-            ratingCount={ratingCount}
-          />
+          <SponsorHoverCard id={sponsorCard.id} showLink={showLink} />
         </PopoverContent>
       </PopHover>
     </>

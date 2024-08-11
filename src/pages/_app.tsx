@@ -2,7 +2,7 @@
  * @Author: Ender-Wiggin
  * @Date: 2024-08-10 00:35:54
  * @LastEditors: Ender-Wiggin
- * @LastEditTime: 2024-08-10 22:02:13
+ * @LastEditTime: 2024-08-11 21:19:58
  * @Description:
  */
 import { AppProps } from 'next/app';
@@ -11,6 +11,7 @@ import { appWithTranslation } from 'next-i18next';
 
 import '@/styles/globals.css';
 import '@/styles/arknova.css';
+import '@/styles/animals.css';
 import '@/styles/odometer.css';
 
 function MyApp({ Component, pageProps }: AppProps) {

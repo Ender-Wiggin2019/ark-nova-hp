@@ -1,3 +1,10 @@
+/*
+ * @Author: Ender-Wiggin
+ * @Date: 2024-08-10 00:35:54
+ * @LastEditors: Ender-Wiggin
+ * @LastEditTime: 2024-08-11 02:36:36
+ * @Description:
+ */
 import React from 'react';
 
 import { AnimalModelCard } from '@/components/cards/animal_cards/models/AnimalModelCard';
@@ -9,10 +16,10 @@ import {
 
 import { BaseAnimalCard } from './BaseAnimalCard';
 
-import { IAnimalCard } from '@/types/IAnimalCard';
+import { AnimalCard } from '@/types/AnimalCard';
 
 interface RatedAnimalCardProps {
-  cardData: IAnimalCard;
+  cardData: AnimalCard;
   showLink: boolean;
 }
 
@@ -20,7 +27,7 @@ export const RatedAnimalCard: React.FC<RatedAnimalCardProps> = ({
   cardData,
   showLink,
 }) => {
-  const { animalCard, model, rating, ratingCount } = cardData;
+  const animalCard = cardData;
 
   return (
     <>
@@ -29,13 +36,7 @@ export const RatedAnimalCard: React.FC<RatedAnimalCardProps> = ({
           <BaseAnimalCard animal={animalCard} />
         </PopoverTrigger>
         <PopoverContent className='z-20 -mt-56 w-48 bg-zinc-50/95 p-2 md:-mt-64 md:w-52'>
-          <AnimalModelCard
-            id={animalCard.id}
-            model={model}
-            showLink={showLink}
-            rating={rating}
-            ratingCount={ratingCount}
-          />
+          <AnimalModelCard id={animalCard.id} showLink={showLink} />
         </PopoverContent>
       </PopHover>
     </>

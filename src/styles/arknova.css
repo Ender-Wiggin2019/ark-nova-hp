@@ -577,13 +577,14 @@
 }
 
 .ark-card.zoo-card.animal-card .ark-card-wrapper {
-  background-position-x: 33.3333333333%;
+  /* background-position-x: 33.3333333333%; */
+  background-size: 100%;
 }
 
 .ark-card.zoo-card.animal-card .ark-card-wrapper .ark-card-top {
   background-size: 100%;
-  height: 297px;
-  width: 373px;
+  /* height: 297px;
+  width: 373px; */
 }
 
 .ark-card.zoo-card.animal-card
@@ -994,621 +995,6 @@
   .animal-ability
   .animal-ability-desc {
   display: none;
-}
-
-.zoo-card.animal-card[data-id='A341_Capybara'] .ark-card-top {
-  background-image: url(/img/animals/A341_Capybara.jpg);
-}
-
-.zoo-card.animal-card[data-id='A401_Cheetah'] .ark-card-top {
-  background-image: url(/img/animals/A401_Cheetah.jpg);
-}
-
-.zoo-card.animal-card[data-id='A402_Lion'] .ark-card-top {
-  background-image: url(/img/animals/A402_Lion.jpg);
-}
-
-.zoo-card.animal-card[data-id='A403_Leopard'] .ark-card-top {
-  background-image: url(/img/animals/A403_Leopard.jpg);
-}
-
-.zoo-card.animal-card[data-id='A404_Caracal'] .ark-card-top {
-  background-image: url(/img/animals/A404_Caracal.jpg);
-}
-
-.zoo-card.animal-card[data-id='A405_FennecFox'] .ark-card-top {
-  background-image: url(/img/animals/A405_FennecFox.jpg);
-}
-
-.zoo-card.animal-card[data-id='A406_SiberianTiger'] .ark-card-top {
-  background-image: url(/img/animals/A406_SiberianTiger.jpg);
-}
-
-.zoo-card.animal-card[data-id='A407_SumatranTiger'] .ark-card-top {
-  background-image: url(/img/animals/A407_SumatranTiger.jpg);
-}
-
-.zoo-card.animal-card[data-id='A408_SlothBear'] .ark-card-top {
-  background-image: url(/img/animals/A408_SlothBear.jpg);
-}
-
-.zoo-card.animal-card[data-id='A409_SunBear'] .ark-card-top {
-  background-image: url(/img/animals/A409_SunBear.jpg);
-}
-
-.zoo-card.animal-card[data-id='A410_YellowthroatedMarten'] .ark-card-top {
-  background-image: url(/img/animals/A410_YellowthroatedMarten.jpg);
-}
-
-.zoo-card.animal-card[data-id='A411_GrizzlyBear'] .ark-card-top {
-  background-image: url(/img/animals/A411_GrizzlyBear.jpg);
-}
-
-.zoo-card.animal-card[data-id='A412_Jaguar'] .ark-card-top {
-  background-image: url(/img/animals/A412_Jaguar.jpg);
-}
-
-.zoo-card.animal-card[data-id='A413_Cougar'] .ark-card-top {
-  background-image: url(/img/animals/A413_Cougar.jpg);
-}
-
-.zoo-card.animal-card[data-id='A414_SouthAmericanCoati'] .ark-card-top {
-  background-image: url(/img/animals/A414_SouthAmericanCoati.jpg);
-}
-
-.zoo-card.animal-card[data-id='A415_Raccoon'] .ark-card-top {
-  background-image: url(/img/animals/A415_Raccoon.jpg);
-}
-
-.zoo-card.animal-card[data-id='A416_EurasianBrownBear'] .ark-card-top {
-  background-image: url(/img/animals/A416_EurasianBrownBear.jpg);
-}
-
-.zoo-card.animal-card[data-id='A417_Wolf'] .ark-card-top {
-  background-image: url(/img/animals/A417_Wolf.jpg);
-}
-
-.zoo-card.animal-card[data-id='A418_EurasianLynx'] .ark-card-top {
-  background-image: url(/img/animals/A418_EurasianLynx.jpg);
-}
-
-.zoo-card.animal-card[data-id='A419_EuropeanBadger'] .ark-card-top {
-  background-image: url(/img/animals/A419_EuropeanBadger.jpg);
-}
-
-.zoo-card.animal-card[data-id='A420_Stoat'] .ark-card-top {
-  background-image: url(/img/animals/A420_Stoat.jpg);
-}
-
-.zoo-card.animal-card[data-id='A421_NewZealandFurSeal'] .ark-card-top {
-  background-image: url(/img/animals/A421_NewZealandFurSeal.jpg);
-}
-
-.zoo-card.animal-card[data-id='A422_AustralianSeaLion'] .ark-card-top {
-  background-image: url(/img/animals/A422_AustralianSeaLion.jpg);
-}
-
-.zoo-card.animal-card[data-id='A423_NewZealandSeaLion'] .ark-card-top {
-  background-image: url(/img/animals/A423_NewZealandSeaLion.jpg);
-}
-
-.zoo-card.animal-card[data-id='A424_AustralianDingo'] .ark-card-top {
-  background-image: url(/img/animals/A424_AustralianDingo.jpg);
-}
-
-.zoo-card.animal-card[data-id='A425_TasmanianDevil'] .ark-card-top {
-  background-image: url(/img/animals/A425_TasmanianDevil.jpg);
-}
-
-.zoo-card.animal-card[data-id='A426_AfricanBushElephant'] .ark-card-top {
-  background-image: url(/img/animals/A426_AfricanBushElephant.jpg);
-}
-
-.zoo-card.animal-card[data-id='A427_WhiteRhinoceros'] .ark-card-top {
-  background-image: url(/img/animals/A427_WhiteRhinoceros.jpg);
-}
-
-.zoo-card.animal-card[data-id='A428_NorthernGiraffe'] .ark-card-top {
-  background-image: url(/img/animals/A428_NorthernGiraffe.jpg);
-}
-
-.zoo-card.animal-card[data-id='A429_GrevysZebra'] .ark-card-top {
-  background-image: url(/img/animals/A429_GrevysZebra.jpg);
-}
-
-.zoo-card.animal-card[data-id='A430_PygmyHippopotamus'] .ark-card-top {
-  background-image: url(/img/animals/A430_PygmyHippopotamus.jpg);
-}
-
-.zoo-card.animal-card[data-id='A431_AsianElephant'] .ark-card-top {
-  background-image: url(/img/animals/A431_AsianElephant.jpg);
-}
-
-.zoo-card.animal-card[data-id='A432_IndianRhinoceros'] .ark-card-top {
-  background-image: url(/img/animals/A432_IndianRhinoceros.jpg);
-}
-
-.zoo-card.animal-card[data-id='A433_GiantPanda'] .ark-card-top {
-  background-image: url(/img/animals/A433_GiantPanda.jpg);
-}
-
-.zoo-card.animal-card[data-id='A434_RedPanda'] .ark-card-top {
-  background-image: url(/img/animals/A434_RedPanda.jpg);
-}
-
-.zoo-card.animal-card[data-id='A435_MalayanTapir'] .ark-card-top {
-  background-image: url(/img/animals/A435_MalayanTapir.jpg);
-}
-
-.zoo-card.animal-card[data-id='A436_AmericanBison'] .ark-card-top {
-  background-image: url(/img/animals/A436_AmericanBison.jpg);
-}
-
-.zoo-card.animal-card[data-id='A437_Muskox'] .ark-card-top {
-  background-image: url(/img/animals/A437_Muskox.jpg);
-}
-
-.zoo-card.animal-card[data-id='A438_Reindeer'] .ark-card-top {
-  background-image: url(/img/animals/A438_Reindeer.jpg);
-}
-
-.zoo-card.animal-card[data-id='A439_Llama'] .ark-card-top {
-  background-image: url(/img/animals/A439_Llama.jpg);
-}
-
-.zoo-card.animal-card[data-id='A440_MountainTapir'] .ark-card-top {
-  background-image: url(/img/animals/A440_MountainTapir.jpg);
-}
-
-.zoo-card.animal-card[data-id='A441_EuropeanBison'] .ark-card-top {
-  background-image: url(/img/animals/A441_EuropeanBison.jpg);
-}
-
-.zoo-card.animal-card[data-id='A442_Moose'] .ark-card-top {
-  background-image: url(/img/animals/A442_Moose.jpg);
-}
-
-.zoo-card.animal-card[data-id='A443_RedDeer'] .ark-card-top {
-  background-image: url(/img/animals/A443_RedDeer.jpg);
-}
-
-.zoo-card.animal-card[data-id='A444_AlpineIbex'] .ark-card-top {
-  background-image: url(/img/animals/A444_AlpineIbex.jpg);
-}
-
-.zoo-card.animal-card[data-id='A445_CrestedPorcupine'] .ark-card-top {
-  background-image: url(/img/animals/A445_CrestedPorcupine.jpg);
-}
-
-.zoo-card.animal-card[data-id='A446_Dugong'] .ark-card-top {
-  background-image: url(/img/animals/A446_Dugong.jpg);
-}
-
-.zoo-card.animal-card[data-id='A447_RedKangaroo'] .ark-card-top {
-  background-image: url(/img/animals/A447_RedKangaroo.jpg);
-}
-
-.zoo-card.animal-card[data-id='A448_Koala'] .ark-card-top {
-  background-image: url(/img/animals/A448_Koala.jpg);
-}
-
-.zoo-card.animal-card[data-id='A449_Platypus'] .ark-card-top {
-  background-image: url(/img/animals/A449_Platypus.jpg);
-}
-
-.zoo-card.animal-card[data-id='A450_CommonWombat'] .ark-card-top {
-  background-image: url(/img/animals/A450_CommonWombat.jpg);
-}
-
-.zoo-card.animal-card[data-id='A451_ProboscisMonkey'] .ark-card-top {
-  background-image: url(/img/animals/A451_ProboscisMonkey.jpg);
-}
-
-.zoo-card.animal-card[data-id='A452_SenegalBushbaby'] .ark-card-top {
-  background-image: url(/img/animals/A452_SenegalBushbaby.jpg);
-}
-
-.zoo-card.animal-card[data-id='A453_CollaredMangabey'] .ark-card-top {
-  background-image: url(/img/animals/A453_CollaredMangabey.jpg);
-}
-
-.zoo-card.animal-card[data-id='A454_RingtailedLemur'] .ark-card-top {
-  background-image: url(/img/animals/A454_RingtailedLemur.jpg);
-}
-
-.zoo-card.animal-card[data-id='A455_MantledGuereza'] .ark-card-top {
-  background-image: url(/img/animals/A455_MantledGuereza.jpg);
-}
-
-.zoo-card.animal-card[data-id='A456_BarbaryMacaque'] .ark-card-top {
-  background-image: url(/img/animals/A456_BarbaryMacaque.jpg);
-}
-
-.zoo-card.animal-card[data-id='A457_Mandrill'] .ark-card-top {
-  background-image: url(/img/animals/A457_Mandrill.jpg);
-}
-
-.zoo-card.animal-card[data-id='A458_JapaneseMacaque'] .ark-card-top {
-  background-image: url(/img/animals/A458_JapaneseMacaque.jpg);
-}
-
-.zoo-card.animal-card[data-id='A459_RedshankedDouc'] .ark-card-top {
-  background-image: url(/img/animals/A459_RedshankedDouc.jpg);
-}
-
-.zoo-card.animal-card[data-id='A460_DuskyleafMonkey'] .ark-card-top {
-  background-image: url(/img/animals/A460_DuskyleafMonkey.jpg);
-}
-
-.zoo-card.animal-card[data-id='A461_HorsfieldsTarsier'] .ark-card-top {
-  background-image: url(/img/animals/A461_HorsfieldsTarsier.jpg);
-}
-
-.zoo-card.animal-card[data-id='A462_NorthernPlainsGrayLangur'] .ark-card-top {
-  background-image: url(/img/animals/A462_NorthernPlainsGrayLangur.jpg);
-}
-
-.zoo-card.animal-card[data-id='A463_PanamanianWhitefacedCapuchin']
-  .ark-card-top {
-  background-image: url(/img/animals/A463_PanamanianWhitefacedCapuchin.jpg);
-}
-
-.zoo-card.animal-card[data-id='A464_BrownSpiderMonkey'] .ark-card-top {
-  background-image: url(/img/animals/A464_BrownSpiderMonkey.jpg);
-}
-
-.zoo-card.animal-card[data-id='A465_GoldenLionTamarin'] .ark-card-top {
-  background-image: url(/img/animals/A465_GoldenLionTamarin.jpg);
-}
-
-.zoo-card.animal-card[data-id='A466_BolivianRedHowler'] .ark-card-top {
-  background-image: url(/img/animals/A466_BolivianRedHowler.jpg);
-}
-
-.zoo-card.animal-card[data-id='A467_EcuadorianSquirellMonkey'] .ark-card-top {
-  background-image: url(/img/animals/A467_EcuadorianSquirellMonkey.jpg);
-}
-
-.zoo-card.animal-card[data-id='A468_CottontopTamarin'] .ark-card-top {
-  background-image: url(/img/animals/A468_CottontopTamarin.jpg);
-}
-
-.zoo-card.animal-card[data-id='A469_NileCrocodile'] .ark-card-top {
-  background-image: url(/img/animals/A469_NileCrocodile.jpg);
-}
-
-.zoo-card.animal-card[data-id='A470_WesternGreenMamba'] .ark-card-top {
-  background-image: url(/img/animals/A470_WesternGreenMamba.jpg);
-}
-
-.zoo-card.animal-card[data-id='A471_AfricanSpurredTortoise'] .ark-card-top {
-  background-image: url(/img/animals/A471_AfricanSpurredTortoise.jpg);
-}
-
-.zoo-card.animal-card[data-id='A472_RockMonitor'] .ark-card-top {
-  background-image: url(/img/animals/A472_RockMonitor.jpg);
-}
-
-.zoo-card.animal-card[data-id='A473_CommonAgama'] .ark-card-top {
-  background-image: url(/img/animals/A473_CommonAgama.jpg);
-}
-
-.zoo-card.animal-card[data-id='A474_IndianRockPython'] .ark-card-top {
-  background-image: url(/img/animals/A474_IndianRockPython.jpg);
-}
-
-.zoo-card.animal-card[data-id='A475_IndianCobra'] .ark-card-top {
-  background-image: url(/img/animals/A475_IndianCobra.jpg);
-}
-
-.zoo-card.animal-card[data-id='A476_KomodoDragon'] .ark-card-top {
-  background-image: url(/img/animals/A476_KomodoDragon.jpg);
-}
-
-.zoo-card.animal-card[data-id='A477_VeiledChameleon'] .ark-card-top {
-  background-image: url(/img/animals/A477_VeiledChameleon.jpg);
-}
-
-.zoo-card.animal-card[data-id='A478_ChineseWaterDragon'] .ark-card-top {
-  background-image: url(/img/animals/A478_ChineseWaterDragon.jpg);
-}
-
-.zoo-card.animal-card[data-id='A479_AmericanAlligator'] .ark-card-top {
-  background-image: url(/img/animals/A479_AmericanAlligator.jpg);
-}
-
-.zoo-card.animal-card[data-id='A480_BroadsnoutedCaiman'] .ark-card-top {
-  background-image: url(/img/animals/A480_BroadsnoutedCaiman.jpg);
-}
-
-.zoo-card.animal-card[data-id='A481_GalApagosGiantTortoise'] .ark-card-top {
-  background-image: url(/img/animals/A481_GalApagosGiantTortoise.jpg);
-}
-
-.zoo-card.animal-card[data-id='A482_Anaconda'] .ark-card-top {
-  background-image: url(/img/animals/A482_Anaconda.jpg);
-}
-
-.zoo-card.animal-card[data-id='A483_BoaConstrictor'] .ark-card-top {
-  background-image: url(/img/animals/A483_BoaConstrictor.jpg);
-}
-
-.zoo-card.animal-card[data-id='A484_EuropeanPondTurtle'] .ark-card-top {
-  background-image: url(/img/animals/A484_EuropeanPondTurtle.jpg);
-}
-
-.zoo-card.animal-card[data-id='A485_CommonEuropeanAdder'] .ark-card-top {
-  background-image: url(/img/animals/A485_CommonEuropeanAdder.jpg);
-}
-
-.zoo-card.animal-card[data-id='A486_CommonWallLizard'] .ark-card-top {
-  background-image: url(/img/animals/A486_CommonWallLizard.jpg);
-}
-
-.zoo-card.animal-card[data-id='A487_EuropeanGrassSnake'] .ark-card-top {
-  background-image: url(/img/animals/A487_EuropeanGrassSnake.jpg);
-}
-
-.zoo-card.animal-card[data-id='A488_SlowWorm'] .ark-card-top {
-  background-image: url(/img/animals/A488_SlowWorm.jpg);
-}
-
-.zoo-card.animal-card[data-id='A489_SaltwaterCrocodile'] .ark-card-top {
-  background-image: url(/img/animals/A489_SaltwaterCrocodile.jpg);
-}
-
-.zoo-card.animal-card[data-id='A490_GouldsMonitor'] .ark-card-top {
-  background-image: url(/img/animals/A490_GouldsMonitor.jpg);
-}
-
-.zoo-card.animal-card[data-id='A491_FrilledLizard'] .ark-card-top {
-  background-image: url(/img/animals/A491_FrilledLizard.jpg);
-}
-
-.zoo-card.animal-card[data-id='A492_InlandTaipan'] .ark-card-top {
-  background-image: url(/img/animals/A492_InlandTaipan.jpg);
-}
-
-.zoo-card.animal-card[data-id='A493_ThornyDevil'] .ark-card-top {
-  background-image: url(/img/animals/A493_ThornyDevil.jpg);
-}
-
-.zoo-card.animal-card[data-id='A494_AfricanOstrich'] .ark-card-top {
-  background-image: url(/img/animals/A494_AfricanOstrich.jpg);
-}
-
-.zoo-card.animal-card[data-id='A495_SecretaryBird'] .ark-card-top {
-  background-image: url(/img/animals/A495_SecretaryBird.jpg);
-}
-
-.zoo-card.animal-card[data-id='A496_Marabou'] .ark-card-top {
-  background-image: url(/img/animals/A496_Marabou.jpg);
-}
-
-.zoo-card.animal-card[data-id='A497_LesserFlamingo'] .ark-card-top {
-  background-image: url(/img/animals/A497_LesserFlamingo.jpg);
-}
-
-.zoo-card.animal-card[data-id='A498_Shoebill'] .ark-card-top {
-  background-image: url(/img/animals/A498_Shoebill.jpg);
-}
-
-.zoo-card.animal-card[data-id='A499_CinereousVulture'] .ark-card-top {
-  background-image: url(/img/animals/A499_CinereousVulture.jpg);
-}
-
-.zoo-card.animal-card[data-id='A500_LongbilledVulture'] .ark-card-top {
-  background-image: url(/img/animals/A500_LongbilledVulture.jpg);
-}
-
-.zoo-card.animal-card[data-id='A501_IndianPeafowl'] .ark-card-top {
-  background-image: url(/img/animals/A501_IndianPeafowl.jpg);
-}
-
-.zoo-card.animal-card[data-id='A502_GreatHornbill'] .ark-card-top {
-  background-image: url(/img/animals/A502_GreatHornbill.jpg);
-}
-
-.zoo-card.animal-card[data-id='A503_SnowyOwl'] .ark-card-top {
-  background-image: url(/img/animals/A503_SnowyOwl.jpg);
-}
-
-.zoo-card.animal-card[data-id='A504_AndeanCondor'] .ark-card-top {
-  background-image: url(/img/animals/A504_AndeanCondor.jpg);
-}
-
-.zoo-card.animal-card[data-id='A505_BaldEagle'] .ark-card-top {
-  background-image: url(/img/animals/A505_BaldEagle.jpg);
-}
-
-.zoo-card.animal-card[data-id='A506_KingVulture'] .ark-card-top {
-  background-image: url(/img/animals/A506_KingVulture.jpg);
-}
-
-.zoo-card.animal-card[data-id='A507_GreaterRhea'] .ark-card-top {
-  background-image: url(/img/animals/A507_GreaterRhea.jpg);
-}
-
-.zoo-card.animal-card[data-id='A508_ScarletMacaw'] .ark-card-top {
-  background-image: url(/img/animals/A508_ScarletMacaw.jpg);
-}
-
-.zoo-card.animal-card[data-id='A509_GoldenEagle'] .ark-card-top {
-  background-image: url(/img/animals/A509_GoldenEagle.jpg);
-}
-
-.zoo-card.animal-card[data-id='A510_WhiteStork'] .ark-card-top {
-  background-image: url(/img/animals/A510_WhiteStork.jpg);
-}
-
-.zoo-card.animal-card[data-id='A511_GreaterFlamingo'] .ark-card-top {
-  background-image: url(/img/animals/A511_GreaterFlamingo.jpg);
-}
-
-.zoo-card.animal-card[data-id='A512_EurasianEagleowl'] .ark-card-top {
-  background-image: url(/img/animals/A512_EurasianEagleowl.jpg);
-}
-
-.zoo-card.animal-card[data-id='A513_BarnOwl'] .ark-card-top {
-  background-image: url(/img/animals/A513_BarnOwl.jpg);
-}
-
-.zoo-card.animal-card[data-id='A514_Emu'] .ark-card-top {
-  background-image: url(/img/animals/A514_Emu.jpg);
-}
-
-.zoo-card.animal-card[data-id='A515_AustralianPelican'] .ark-card-top {
-  background-image: url(/img/animals/A515_AustralianPelican.jpg);
-}
-
-.zoo-card.animal-card[data-id='A516_NorhternCassowary'] .ark-card-top {
-  background-image: url(/img/animals/A516_NorhternCassowary.jpg);
-}
-
-.zoo-card.animal-card[data-id='A517_LaughingKookaburra'] .ark-card-top {
-  background-image: url(/img/animals/A517_LaughingKookaburra.jpg);
-}
-
-.zoo-card.animal-card[data-id='A518_LesserBirdofparadise'] .ark-card-top {
-  background-image: url(/img/animals/A518_LesserBirdofparadise.jpg);
-}
-
-.zoo-card.animal-card[data-id='A519_domesticGoat'] .ark-card-top {
-  background-image: url(/img/animals/A519_domesticGoat.jpg);
-}
-
-.zoo-card.animal-card[data-id='A520_Sheep'] .ark-card-top {
-  background-image: url(/img/animals/A520_Sheep.jpg);
-}
-
-.zoo-card.animal-card[data-id='A521_Horse'] .ark-card-top {
-  background-image: url(/img/animals/A521_Horse.jpg);
-}
-
-.zoo-card.animal-card[data-id='A522_Donkey'] .ark-card-top {
-  background-image: url(/img/animals/A522_Donkey.jpg);
-}
-
-.zoo-card.animal-card[data-id='A523_DomesticRabbit'] .ark-card-top {
-  background-image: url(/img/animals/A523_DomesticRabbit.jpg);
-}
-
-.zoo-card.animal-card[data-id='A524_Mangalica'] .ark-card-top {
-  background-image: url(/img/animals/A524_Mangalica.jpg);
-}
-
-.zoo-card.animal-card[data-id='A525_GuineaPig'] .ark-card-top {
-  background-image: url(/img/animals/A525_GuineaPig.jpg);
-}
-
-.zoo-card.animal-card[data-id='A526_Alpaca'] .ark-card-top {
-  background-image: url(/img/animals/A526_Alpaca.jpg);
-}
-
-.zoo-card.animal-card[data-id='A527_CoconutLorikeet'] .ark-card-top {
-  background-image: url(/img/animals/A527_CoconutLorikeet.jpg);
-}
-
-.zoo-card.animal-card[data-id='A528_BennettsWallaby'] .ark-card-top {
-  background-image: url(/img/animals/A528_BennettsWallaby.jpg);
-}
-
-/* Marine World */
-.zoo-card.animal-card[data-id='A529_MagnificentSeaAnemone'] .ark-card-top {
-  background-image: url(/img/animals/A529_MagnificentSeaAnemone.jpg);
-}
-.zoo-card.animal-card[data-id='A530_OrangeClownfish'] .ark-card-top {
-  background-image: url(/img/animals/A530_OrangeClownfish.jpg);
-}
-.zoo-card.animal-card[data-id='A531_PaletteSurgeonfish'] .ark-card-top {
-  background-image: url(/img/animals/A531_PaletteSurgeonfish.jpg);
-}
-.zoo-card.animal-card[data-id='A532_Zooplankton'] .ark-card-top {
-  background-image: url(/img/animals/A532_Zooplankton.jpg);
-}
-.zoo-card.animal-card[data-id='A533_BlacksideHawkfish'] .ark-card-top {
-  background-image: url(/img/animals/A533_BlacksideHawkfish.jpg);
-}
-.zoo-card.animal-card[data-id='A534_SouthernBlue-RingedOctopl'] .ark-card-top {
-  background-image: url(/img/animals/A534_SouthernBlue-RingedOctopl.jpg);
-}
-.zoo-card.animal-card[data-id='A535_SharknoseGoby'] .ark-card-top {
-  background-image: url(/img/animals/A535_SharknoseGoby.jpg);
-}
-.zoo-card.animal-card[data-id='A536_LonghornCowfish'] .ark-card-top {
-  background-image: url(/img/animals/A536_LonghornCowfish.jpg);
-}
-.zoo-card.animal-card[data-id='A537_BlackbarTriggerfish'] .ark-card-top {
-  background-image: url(/img/animals/A537_BlackbarTriggerfish.jpg);
-}
-.zoo-card.animal-card[data-id='A538_DevilFirefish'] .ark-card-top {
-  background-image: url(/img/animals/A538_DevilFirefish.jpg);
-}
-.zoo-card.animal-card[data-id='A539_MericanWhitespottedFilefis'] .ark-card-top {
-  background-image: url(/img/animals/A539_MericanWhitespottedFilefis.jpg);
-}
-.zoo-card.animal-card[data-id='A540_GuineafowlPuffer'] .ark-card-top {
-  background-image: url(/img/animals/A540_GuineafowlPuffer.jpg);
-}
-.zoo-card.animal-card[data-id='A541_BluespottedRibbontailRay'] .ark-card-top {
-  background-image: url(/img/animals/A541_BluespottedRibbontailRay.jpg);
-}
-.zoo-card.animal-card[data-id='A542_Humpheadwrasse'] .ark-card-top {
-  background-image: url(/img/animals/A542_Humpheadwrasse.jpg);
-}
-.zoo-card.animal-card[data-id='A543_CoastalMantaRay'] .ark-card-top {
-  background-image: url(/img/animals/A543_CoastalMantaRay.jpg);
-}
-.zoo-card.animal-card[data-id='A544_CaribbeanReefShark'] .ark-card-top {
-  background-image: url(/img/animals/A544_CaribbeanReefShark.jpg);
-}
-.zoo-card.animal-card[data-id='A545_LongcombSawfish'] .ark-card-top {
-  background-image: url(/img/animals/A545_LongcombSawfish.jpg);
-}
-.zoo-card.animal-card[data-id='A546_SandTigerShark'] .ark-card-top {
-  background-image: url(/img/animals/A546_SandTigerShark.jpg);
-}
-.zoo-card.animal-card[data-id='A547_MediterraneanRainbow'] .ark-card-top {
-  background-image: url(/img/animals/A547_MediterraneanRainbow.jpg);
-}
-.zoo-card.animal-card[data-id='A548_LinedSeahorse'] .ark-card-top {
-  background-image: url(/img/animals/A548_LinedSeahorse.jpg);
-}
-.zoo-card.animal-card[data-id='A549_MmonOctopus'] .ark-card-top {
-  background-image: url(/img/animals/A549_MmonOctopus.jpg);
-}
-.zoo-card.animal-card[data-id='A550_CompassJellyfish'] .ark-card-top {
-  background-image: url(/img/animals/A550_CompassJellyfish.jpg);
-}
-.zoo-card.animal-card[data-id='A551_LoggerheadSeaTurtle'] .ark-card-top {
-  background-image: url(/img/animals/A551_LoggerheadSeaTurtle.jpg);
-}
-.zoo-card.animal-card[data-id='A552_GreenSeaTurtle'] .ark-card-top {
-  background-image: url(/img/animals/A552_GreenSeaTurtle.jpg);
-}
-.zoo-card.animal-card[data-id='A553_Tambaqui'] .ark-card-top {
-  background-image: url(/img/animals/A553_Tambaqui.jpg);
-}
-.zoo-card.animal-card[data-id='A554_AfricanPenguin'] .ark-card-top {
-  background-image: url(/img/animals/A554_AfricanPenguin.jpg);
-}
-.zoo-card.animal-card[data-id='A555_SoldenSnub-NosedMonkey'] .ark-card-top {
-  background-image: url(/img/animals/A555_SoldenSnub-NosedMonkey.jpg);
-}
-.zoo-card.animal-card[data-id='A556_Wolverine'] .ark-card-top {
-  background-image: url(/img/animals/A556_Wolverine.jpg);
-}
-.zoo-card.animal-card[data-id='A557_IetnamesePot-BelliedPig'] .ark-card-top {
-  background-image: url(/img/animals/A557_IetnamesePot-BelliedPig.jpg);
-}
-.zoo-card.animal-card[data-id='A558_NorthernMuriqui'] .ark-card-top {
-  background-image: url(/img/animals/A558_NorthernMuriqui.jpg);
-}
-.zoo-card.animal-card[data-id='A559_CoquerelsSifaka'] .ark-card-top {
-  background-image: url(/img/animals/A559_CoquerelsSifaka.jpg);
-}
-.zoo-card.animal-card[data-id='A560_BrahminyKite'] .ark-card-top {
-  background-image: url(/img/animals/A560_BrahminyKite.jpg);
 }
 
 .ark-card.zoo-card.project-card .ark-card-wrapper {
@@ -2941,326 +2327,224 @@
   border-color: #04587c;
 }
 
-.zoo-card.sponsor-card[data-id='S201_ScienceLab'] .ark-card-wrapper {
-  background-image: url(/img/sponsors/S201_ScienceLab.jpg);
+.zoo-card.sponsor-card[data-id='126'] .ark-card-wrapper {
+  background-image: url(/img/sponsors/126时间转换器.png);
 }
 
-.zoo-card.sponsor-card[data-id='S202_Spokesperson'] .ark-card-wrapper {
-  background-image: url(/img/sponsors/S202_Spokesperson.jpg);
+.zoo-card.sponsor-card[data-id='127'] .ark-card-wrapper {
+  background-image: url(/img/sponsors/127纽特·斯卡曼德的箱子.png);
 }
 
-.zoo-card.sponsor-card[data-id='S203_Veterinarian'] .ark-card-wrapper {
-  background-image: url(/img/sponsors/S203_Veterinarian.jpg);
+.zoo-card.sponsor-card[data-id='128'] .ark-card-wrapper {
+  background-image: url(/img/sponsors/128巫师联盟.png);
 }
 
-.zoo-card.sponsor-card[data-id='S204_ScienceMuseum'] .ark-card-wrapper {
-  background-image: url(/img/sponsors/S204_ScienceMuseum.jpg);
+.zoo-card.sponsor-card[data-id='129'] .ark-card-wrapper {
+  background-image: url(/img/sponsors/129国际巫师联合会.png);
 }
 
-.zoo-card.sponsor-card[data-id='S205_GorillaFieldResearch'] .ark-card-wrapper {
-  background-image: url(/img/sponsors/S205_GorillaFieldResearch.jpg);
+.zoo-card.sponsor-card[data-id='130'] .ark-card-wrapper {
+  background-image: url(/img/sponsors/130火龙研究专家.png);
 }
 
-.zoo-card.sponsor-card[data-id='S206_MedicalBreakthrough'] .ark-card-wrapper {
-  background-image: url(/img/sponsors/S206_MedicalBreakthrough.jpg);
+.zoo-card.sponsor-card[data-id='131'] .ark-card-wrapper {
+  background-image: url(/img/sponsors/131冥想盆.png);
 }
 
-.zoo-card.sponsor-card[data-id='S207_BasicResearch'] .ark-card-wrapper {
-  background-image: url(/img/sponsors/S207_BasicResearch.jpg);
+.zoo-card.sponsor-card[data-id='132'] .ark-card-wrapper {
+  background-image: url(/img/sponsors/132隐形衣.png);
 }
 
-.zoo-card.sponsor-card[data-id='S208_ScienceLibrary'] .ark-card-wrapper {
-  background-image: url(/img/sponsors/S208_ScienceLibrary.jpg);
+.zoo-card.sponsor-card[data-id='133'] .ark-card-wrapper {
+  background-image: url(/img/sponsors/133圣芒戈魔法伤病医院.png);
 }
 
-.zoo-card.sponsor-card[data-id='S209_TechnologyInstitute'] .ark-card-wrapper {
-  background-image: url(/img/sponsors/S209_TechnologyInstitute.jpg);
+.zoo-card.sponsor-card[data-id='134'] .ark-card-wrapper {
+  background-image: url(/img/sponsors/134鳃囊草生产大亨.png);
 }
 
-.zoo-card.sponsor-card[data-id='S210_ExpertOnTheAmericas'] .ark-card-wrapper {
-  background-image: url(/img/sponsors/S210_ExpertOnTheAmericas.jpg);
+.zoo-card.sponsor-card[data-id='135'] .ark-card-wrapper {
+  background-image: url(/img/sponsors/135便携式沼泽.png);
 }
 
-.zoo-card.sponsor-card[data-id='S211_ExpertOnEurope'] .ark-card-wrapper {
-  background-image: url(/img/sponsors/S211_ExpertOnEurope.jpg);
+.zoo-card.sponsor-card[data-id='136'] .ark-card-wrapper {
+  background-image: url(/img/sponsors/136消失柜.png);
 }
 
-.zoo-card.sponsor-card[data-id='S212_ExpertOnAustralia'] .ark-card-wrapper {
-  background-image: url(/img/sponsors/S212_ExpertOnAustralia.jpg);
+.zoo-card.sponsor-card[data-id='137'] .ark-card-wrapper {
+  background-image: url(/img/sponsors/137飞天扫帚专卖店.png);
 }
 
-.zoo-card.sponsor-card[data-id='S213_ExpertOnAsia'] .ark-card-wrapper {
-  background-image: url(/img/sponsors/S213_ExpertOnAsia.jpg);
+.zoo-card.sponsor-card[data-id='138'] .ark-card-wrapper {
+  background-image: url(/img/sponsors/138预言家日报独家采访.png);
 }
 
-.zoo-card.sponsor-card[data-id='S214_ExpertOnAfrica'] .ark-card-wrapper {
-  background-image: url(/img/sponsors/S214_ExpertOnAfrica.jpg);
+.zoo-card.sponsor-card[data-id='139'] .ark-card-wrapper {
+  background-image: url(/img/sponsors/139变形术师：跨物种转换.png);
 }
 
-.zoo-card.sponsor-card[data-id='S215_BreedingCooperation'] .ark-card-wrapper {
-  background-image: url(/img/sponsors/S215_BreedingCooperation.jpg);
+.zoo-card.sponsor-card[data-id='140'] .ark-card-wrapper {
+  background-image: url(/img/sponsors/140变形术师：阿尼马格斯.png);
 }
 
-.zoo-card.sponsor-card[data-id='S216_TalentedCommunicator'] .ark-card-wrapper {
-  background-image: url(/img/sponsors/S216_TalentedCommunicator.jpg);
+.zoo-card.sponsor-card[data-id='141'] .ark-card-wrapper {
+  background-image: url(/img/sponsors/141草药学家：魔鬼网.png);
 }
 
-.zoo-card.sponsor-card[data-id='S217_Engineer'] .ark-card-wrapper {
-  background-image: url(/img/sponsors/S217_Engineer.jpg);
+.zoo-card.sponsor-card[data-id='142'] .ark-card-wrapper {
+  background-image: url(/img/sponsors/142草药学家：曼德拉草根.png);
 }
 
-.zoo-card.sponsor-card[data-id='S218_BreedingProgram'] .ark-card-wrapper {
-  background-image: url(/img/sponsors/S218_BreedingProgram.jpg);
+.zoo-card.sponsor-card[data-id='143'] .ark-card-wrapper {
+  background-image: url(/img/sponsors/143魔药学家：复方汤剂.png);
 }
 
-.zoo-card.sponsor-card[data-id='S219_DiversityResearcher'] .ark-card-wrapper {
-  background-image: url(/img/sponsors/S219_DiversityResearcher.jpg);
+.zoo-card.sponsor-card[data-id='144'] .ark-card-wrapper {
+  background-image: url(/img/sponsors/144魔药学家：福灵剂.png);
 }
 
-.zoo-card.sponsor-card[data-id='S220_FederalGrants'] .ark-card-wrapper {
-  background-image: url(/img/sponsors/S220_FederalGrants.jpg);
+.zoo-card.sponsor-card[data-id='145'] .ark-card-wrapper {
+  background-image: url(/img/sponsors/145伊法魔尼魔法学院.png);
 }
 
-.zoo-card.sponsor-card[data-id='S221_Archeologist'] .ark-card-wrapper {
-  background-image: url(/img/sponsors/S221_Archeologist.jpg);
+.zoo-card.sponsor-card[data-id='146'] .ark-card-wrapper {
+  background-image: url(/img/sponsors/146瓦加度魔法学院.png);
 }
 
-.zoo-card.sponsor-card[data-id='S222_ReleaseOfPatents'] .ark-card-wrapper {
-  background-image: url(/img/sponsors/S222_ReleaseOfPatents.jpg);
+.zoo-card.sponsor-card[data-id='147'] .ark-card-wrapper {
+  background-image: url(/img/sponsors/147火山岛魔法所.png);
 }
 
-.zoo-card.sponsor-card[data-id='S223_ScienceInstitute'] .ark-card-wrapper {
-  background-image: url(/img/sponsors/S223_ScienceInstitute.jpg);
+.zoo-card.sponsor-card[data-id='148'] .ark-card-wrapper {
+  background-image: url(/img/sponsors/148悉尼魔法与巫术学院.png);
 }
 
-.zoo-card.sponsor-card[data-id='S224_MigrationRecording'] .ark-card-wrapper {
-  background-image: url(/img/sponsors/S224_MigrationRecording.jpg);
+.zoo-card.sponsor-card[data-id='149'] .ark-card-wrapper {
+  background-image: url(/img/sponsors/149霍格沃茨魔法学院.png);
 }
 
-.zoo-card.sponsor-card[data-id='S225_QuarantineLab'] .ark-card-wrapper {
-  background-image: url(/img/sponsors/S225_QuarantineLab.jpg);
+.zoo-card.sponsor-card[data-id='150'] .ark-card-wrapper {
+  background-image: url(/img/sponsors/150斯莱特林的继承人.png);
 }
 
-.zoo-card.sponsor-card[data-id='S226_ForeignInstitute'] .ark-card-wrapper {
-  background-image: url(/img/sponsors/S226_ForeignInstitute.jpg);
+.zoo-card.sponsor-card[data-id='151'] .ark-card-wrapper {
+  background-image: url(/img/sponsors/151拉文克劳的王冕.png);
 }
 
-.zoo-card.sponsor-card[data-id='S227_WazaSpecialAssignment'] .ark-card-wrapper {
-  background-image: url(/img/sponsors/S227_WazaSpecialAssignment.jpg);
+.zoo-card.sponsor-card[data-id='152'] .ark-card-wrapper {
+  background-image: url(/img/sponsors/152赫奇帕奇的金杯.png);
 }
 
-.zoo-card.sponsor-card[data-id='S228_WazaSmallAnimalProgram']
-  .ark-card-wrapper {
-  background-image: url(/img/sponsors/S228_WazaSmallAnimalProgram.jpg);
+.zoo-card.sponsor-card[data-id='153'] .ark-card-wrapper {
+  background-image: url(/img/sponsors/153格兰芬多的宝剑.png);
 }
 
-.zoo-card.sponsor-card[data-id='S229_ExpertInSmallAnimals'] .ark-card-wrapper {
-  background-image: url(/img/sponsors/S229_ExpertInSmallAnimals.jpg);
+.zoo-card.sponsor-card[data-id='154'] .ark-card-wrapper {
+  background-image: url(/img/sponsors/154尼可·勒梅炼金术师.png);
 }
 
-.zoo-card.sponsor-card[data-id='S230_ExpertInLargeAnimals'] .ark-card-wrapper {
-  background-image: url(/img/sponsors/S230_ExpertInLargeAnimals.jpg);
+.zoo-card.sponsor-card[data-id='155'] .ark-card-wrapper {
+  background-image: url(/img/sponsors/155活点地图.png);
 }
 
-.zoo-card.sponsor-card[data-id='S231_SponsorshipPrimates'] .ark-card-wrapper {
-  background-image: url(/img/sponsors/S231_SponsorshipPrimates.jpg);
+.zoo-card.sponsor-card[data-id='156'] .ark-card-wrapper {
+  background-image: url(/img/sponsors/156有求必应屋.png);
 }
 
-.zoo-card.sponsor-card[data-id='S232_SponsorshipReptiles'] .ark-card-wrapper {
-  background-image: url(/img/sponsors/S232_SponsorshipReptiles.jpg);
+.zoo-card.sponsor-card[data-id='157'] .ark-card-wrapper {
+  background-image: url(/img/sponsors/157古灵阁巫师银行.png);
 }
 
-.zoo-card.sponsor-card[data-id='S233_SponsorshipVultures'] .ark-card-wrapper {
-  background-image: url(/img/sponsors/S233_SponsorshipVultures.jpg);
+.zoo-card.sponsor-card[data-id='158'] .ark-card-wrapper {
+  background-image: url(/img/sponsors/158魔杖制作商:凤凰尾羽杖芯.png);
 }
 
-.zoo-card.sponsor-card[data-id='S234_SponsorshipLions'] .ark-card-wrapper {
-  background-image: url(/img/sponsors/S234_SponsorshipLions.jpg);
+.zoo-card.sponsor-card[data-id='159'] .ark-card-wrapper {
+  background-image: url(/img/sponsors/159魔杖制作商：火龙心脏神经杖芯.png);
 }
 
-.zoo-card.sponsor-card[data-id='S235_SponsorshipElephants'] .ark-card-wrapper {
-  background-image: url(/img/sponsors/S235_SponsorshipElephants.jpg);
+.zoo-card.sponsor-card[data-id='160'] .ark-card-wrapper {
+  background-image: url(/img/sponsors/160魔杖制作商：猫豹毛发杖芯.png);
 }
 
-.zoo-card.sponsor-card[data-id='S236_Primatologist'] .ark-card-wrapper {
-  background-image: url(/img/sponsors/S236_Primatologist.jpg);
+.zoo-card.sponsor-card[data-id='161'] .ark-card-wrapper {
+  background-image: url(/img/sponsors/161魔杖制作商：媚娃头发杖芯.png);
 }
 
-.zoo-card.sponsor-card[data-id='S237_Herpetologist'] .ark-card-wrapper {
-  background-image: url(/img/sponsors/S237_Herpetologist.jpg);
+.zoo-card.sponsor-card[data-id='162'] .ark-card-wrapper {
+  background-image: url(/img/sponsors/162魔杖制作商：独角兽尾毛杖芯.png);
 }
 
-.zoo-card.sponsor-card[data-id='S238_Ornithologist'] .ark-card-wrapper {
-  background-image: url(/img/sponsors/S238_Ornithologist.jpg);
+.zoo-card.sponsor-card[data-id='163'] .ark-card-wrapper {
+  background-image: url(/img/sponsors/163魔杖制作商：长角水蛇杖芯.png);
 }
 
-.zoo-card.sponsor-card[data-id='S239_ExpertInPredators'] .ark-card-wrapper {
-  background-image: url(/img/sponsors/S239_ExpertInPredators.jpg);
+.zoo-card.sponsor-card[data-id='164'] .ark-card-wrapper {
+  background-image: url(/img/sponsors/164神奇动物学家.png);
 }
 
-.zoo-card.sponsor-card[data-id='S240_ExpertInHerbivores'] .ark-card-wrapper {
-  background-image: url(/img/sponsors/S240_ExpertInHerbivores.jpg);
+.zoo-card.sponsor-card[data-id='165'] .ark-card-wrapper {
+  background-image: url(/img/sponsors/165濒危物种拯救计划.png);
 }
 
-.zoo-card.sponsor-card[data-id='S241_Hydrologist'] .ark-card-wrapper {
-  background-image: url(/img/sponsors/S241_Hydrologist.jpg);
+.zoo-card.sponsor-card[data-id='166'] .ark-card-wrapper {
+  background-image: url(/img/sponsors/166鸟类嵌合体研究.png);
 }
 
-.zoo-card.sponsor-card[data-id='S242_Geologist'] .ark-card-wrapper {
-  background-image: url(/img/sponsors/S242_Geologist.jpg);
+.zoo-card.sponsor-card[data-id='167'] .ark-card-wrapper {
+  background-image: url(/img/sponsors/167爬行类嵌合体研究.png);
 }
 
-.zoo-card.sponsor-card[data-id='S243_MeerkatDen'] .ark-card-wrapper {
-  background-image: url(/img/sponsors/S243_MeerkatDen.jpg);
+.zoo-card.sponsor-card[data-id='168'] .ark-card-wrapper {
+  background-image: url(/img/sponsors/168食肉类嵌合体研究.png);
 }
 
-.zoo-card.sponsor-card[data-id='S244_PenguinPool'] .ark-card-wrapper {
-  background-image: url(/img/sponsors/S244_PenguinPool.jpg);
+.zoo-card.sponsor-card[data-id='169'] .ark-card-wrapper {
+  background-image: url(/img/sponsors/169灵长类嵌合体研究.png);
 }
 
-.zoo-card.sponsor-card[data-id='S245_Aquarium'] .ark-card-wrapper {
-  background-image: url(/img/sponsors/S245_Aquarium.jpg);
+.zoo-card.sponsor-card[data-id='170'] .ark-card-wrapper {
+  background-image: url(/img/sponsors/170食草类嵌合体研究.png);
 }
 
-.zoo-card.sponsor-card[data-id='S246_CableCar'] .ark-card-wrapper {
-  background-image: url(/img/sponsors/S246_CableCar.jpg);
+.zoo-card.sponsor-card[data-id='171'] .ark-card-wrapper {
+  background-image: url(/img/sponsors/171海洋类嵌合体研究.png);
 }
 
-.zoo-card.sponsor-card[data-id='S247_BaboonRock'] .ark-card-wrapper {
-  background-image: url(/img/sponsors/S247_BaboonRock.jpg);
+.zoo-card.sponsor-card[data-id='172'] .ark-card-wrapper {
+  background-image: url(/img/sponsors/172赞助商：动物嵌合体.png);
 }
 
-.zoo-card.sponsor-card[data-id='S248_RhesusMonkeyPark'] .ark-card-wrapper {
-  background-image: url(/img/sponsors/S248_RhesusMonkeyPark.jpg);
+.zoo-card.sponsor-card[data-id='173'] .ark-card-wrapper {
+  background-image: url(/img/sponsors/173妖怪们的妖怪书.png);
 }
 
-.zoo-card.sponsor-card[data-id='S249_BarredOwlHut'] .ark-card-wrapper {
-  background-image: url(/img/sponsors/S249_BarredOwlHut.jpg);
+.zoo-card.sponsor-card[data-id='174'] .ark-card-wrapper {
+  background-image: url(/img/sponsors/174决斗俱乐部.png);
 }
 
-.zoo-card.sponsor-card[data-id='S250_SeaTurtleTank'] .ark-card-wrapper {
-  background-image: url(/img/sponsors/S250_SeaTurtleTank.jpg);
+.zoo-card.sponsor-card[data-id='175'] .ark-card-wrapper {
+  background-image: url(/img/sponsors/175巧克力蛙画片集锦.png);
 }
 
-.zoo-card.sponsor-card[data-id='S251_PolarBearExhibit'] .ark-card-wrapper {
-  background-image: url(/img/sponsors/S251_PolarBearExhibit.jpg);
+.zoo-card.sponsor-card[data-id='176'] .ark-card-wrapper {
+  background-image: url(/img/sponsors/176埃及古魔法考察.png);
 }
 
-.zoo-card.sponsor-card[data-id='S252_SpottedHyenaCompound'] .ark-card-wrapper {
-  background-image: url(/img/sponsors/S252_SpottedHyenaCompound.jpg);
+.zoo-card.sponsor-card[data-id='177'] .ark-card-wrapper {
+  background-image: url(/img/sponsors/177嵌合生物学家.png);
 }
 
-.zoo-card.sponsor-card[data-id='S253_OkapiStable'] .ark-card-wrapper {
-  background-image: url(/img/sponsors/S253_OkapiStable.jpg);
+.zoo-card.sponsor-card[data-id='178'] .ark-card-wrapper {
+  background-image: url(/img/sponsors/178魔咒学家：飘浮咒.png);
 }
 
-.zoo-card.sponsor-card[data-id='S254_ZooSchool'] .ark-card-wrapper {
-  background-image: url(/img/sponsors/S254_ZooSchool.jpg);
+.zoo-card.sponsor-card[data-id='179'] .ark-card-wrapper {
+  background-image: url(/img/sponsors/179魔咒学家：闪回咒.png);
 }
 
-.zoo-card.sponsor-card[data-id='S255_AdventurePlayground'] .ark-card-wrapper {
-  background-image: url(/img/sponsors/S255_AdventurePlayground.jpg);
-}
-
-.zoo-card.sponsor-card[data-id='S256_WaterPlayground'] .ark-card-wrapper {
-  background-image: url(/img/sponsors/S256_WaterPlayground.jpg);
-}
-
-.zoo-card.sponsor-card[data-id='S257_SideEntrance'] .ark-card-wrapper {
-  background-image: url(/img/sponsors/S257_SideEntrance.jpg);
-}
-
-.zoo-card.sponsor-card[data-id='S258_NativeSeabirds'] .ark-card-wrapper {
-  background-image: url(/img/sponsors/S258_NativeSeabirds.jpg);
-}
-
-.zoo-card.sponsor-card[data-id='S259_NativeLizards'] .ark-card-wrapper {
-  background-image: url(/img/sponsors/S259_NativeLizards.jpg);
-}
-
-.zoo-card.sponsor-card[data-id='S260_NativeFarmAnimals'] .ark-card-wrapper {
-  background-image: url(/img/sponsors/S260_NativeFarmAnimals.jpg);
-}
-
-.zoo-card.sponsor-card[data-id='S261_GuidedSchoolTours'] .ark-card-wrapper {
-  background-image: url(/img/sponsors/S261_GuidedSchoolTours.jpg);
-}
-
-.zoo-card.sponsor-card[data-id='S262_Explorer'] .ark-card-wrapper {
-  background-image: url(/img/sponsors/S262_Explorer.jpg);
-}
-
-.zoo-card.sponsor-card[data-id='S263_WazaLargeAnimalProgram']
-  .ark-card-wrapper {
-  background-image: url(/img/sponsors/S263_WazaLargeAnimalProgram.jpg);
-}
-
-.zoo-card.sponsor-card[data-id='S264_FreerangeNewWorldMonkeys']
-  .ark-card-wrapper {
-  background-image: url(/img/sponsors/S264_FreerangeNewWorldMonkeys.jpg);
-}
-
-.zoo-card.sponsor-card[data-id='S265_FranchiseBusiness'] .ark-card-wrapper {
-  background-image: url(/img/sponsors/S265_FranchiseBusiness.jpg);
-}
-.zoo-card.sponsor-card[data-id='S266_MarineBiologist'] .ark-card-wrapper {
-  background-image: url(/img/sponsors/S266_MarineBiologist.jpg);
-}
-.zoo-card.sponsor-card[data-id='S267_FarmCat'] .ark-card-wrapper {
-  background-image: url(/img/sponsors/S267_FarmCat.jpg);
-}
-.zoo-card.sponsor-card[data-id='S268_ConferenceOnEurope'] .ark-card-wrapper {
-  background-image: url(/img/sponsors/S268_ConferenceOnEurope.jpg);
-}
-.zoo-card.sponsor-card[data-id='S269_ConferenceOnAustralia'] .ark-card-wrapper {
-  background-image: url(/img/sponsors/S269_ConferenceOnAustralia.jpg);
-}
-.zoo-card.sponsor-card[data-id='S270_MarineResearchExpedition']
-  .ark-card-wrapper {
-  background-image: url(/img/sponsors/S270_MarineResearchExpedition.jpg);
-}
-.zoo-card.sponsor-card[data-id='S271_ExcavationSite'] .ark-card-wrapper {
-  background-image: url(/img/sponsors/S271_ExcavationSite.jpg);
-}
-.zoo-card.sponsor-card[data-id='S272_ExpansionArea'] .ark-card-wrapper {
-  background-image: url(/img/sponsors/S272_ExpansionArea.jpg);
-}
-.zoo-card.sponsor-card[data-id='S273_Publications'] .ark-card-wrapper {
-  background-image: url(/img/sponsors/S273_Publications.jpg);
-}
-.zoo-card.sponsor-card[data-id='S274_MascotStatue'] .ark-card-wrapper {
-  background-image: url(/img/sponsors/S274_MascotStatue.jpg);
-}
-.zoo-card.sponsor-card[data-id='S275_HorseWhisperer'] .ark-card-wrapper {
-  background-image: url(/img/sponsors/S275_HorseWhisperer.jpg);
-}
-.zoo-card.sponsor-card[data-id='S276_LandscapeGardener'] .ark-card-wrapper {
-  background-image: url(/img/sponsors/S276_LandscapeGardener.jpg);
-}
-.zoo-card.sponsor-card[data-id='S277_FieldResearchTypeDOrcas']
-  .ark-card-wrapper {
-  background-image: url(/img/sponsors/S277_FieldResearchTypeDOrcas.jpg);
-}
-.zoo-card.sponsor-card[data-id='S278_AmazonHouse'] .ark-card-wrapper {
-  background-image: url(/img/sponsors/S278_AmazonHouse.jpg);
-}
-.zoo-card.sponsor-card[data-id='S279_UnderwaterTunnel'] .ark-card-wrapper {
-  background-image: url(/img/sponsors/S279_UnderwaterTunnel.jpg);
-}
-.zoo-card.sponsor-card[data-id='S280_Reconstruction'] .ark-card-wrapper {
-  background-image: url(/img/sponsors/S280_Reconstruction.jpg);
-}
-
-.zoo-card.sponsor-card[data-id='S274_VictoryColumn'] .ark-card-wrapper {
-  background-image: url(/img/sponsors/S274_VictoryColumn.jpg);
-}
-
-.zoo-card.sponsor-card[data-id='S281_Arcade'] .ark-card-wrapper {
-  background-image: url(/img/sponsors/S281_Arcade.jpg);
-}
-
-.zoo-card.sponsor-card[data-id='S282_PromotionTeam'] .ark-card-wrapper {
-  background-image: url(/img/sponsors/S282_PromotionTeam.jpg);
+.zoo-card.sponsor-card[data-id='180'] .ark-card-wrapper {
+  background-image: url(/img/sponsors/180家养小精灵权益促进会.png);
 }
 
 [data-starting-appeal='10']

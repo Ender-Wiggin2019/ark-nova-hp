@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { cardNames } from '@/data/CardNames'; // Assuming the json file is named animalData.json
+// import { cardNames } from '@/data/CardNames'; // Assuming the json file is named animalData.json
 
 interface SponsorCardWrapperProps {
   id: string;
@@ -11,12 +11,12 @@ const SponsorCardWrapper: React.FC<SponsorCardWrapperProps> = ({
   id,
   children,
 }) => {
-  const sponsorName = cardNames[id];
+  // const sponsorName = cardNames[id];
 
   return (
     <div
-      id={`card-${sponsorName}`}
-      data-id={sponsorName}
+      id={`card-${id}`}
+      data-id={id}
       className='ark-card zoo-card sponsor-card tooltipable'
     >
       <div className='ark-card-wrapper'>{children}</div>

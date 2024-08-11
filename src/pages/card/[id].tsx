@@ -14,7 +14,6 @@ import Layout from '@/components/layout/Layout';
 import Seo from '@/components/Seo';
 
 import { getAllCardIds } from '@/utils/GetAllCardIds';
-import { getAnimalCardModel } from '@/utils/GetAnimalCardModel';
 import { getCardById, getCardTypeById } from '@/utils/GetCardById';
 
 import { AnimalCard as AnimalCardType } from '@/types/AnimalCard';
@@ -45,11 +44,7 @@ export default function Page(
               <div className='mr-3 flex-initial md:mr-10 lg:mr-20'>
                 <BaseAnimalCard animal={card as AnimalCardType} />
               </div>
-              <AnimalModelCard
-                id={card.id}
-                model={getAnimalCardModel(card as AnimalCardType)}
-                showLink={false}
-              />
+              <AnimalModelCard id={card.id} showLink={false} />
             </div>
           ) : null}
 

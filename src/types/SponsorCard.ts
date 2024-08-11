@@ -10,6 +10,7 @@ import { Tag } from '@/types/Tags';
 export interface SponsorCard {
   id: string;
   name: string;
+  cnName?: string;
   image?: string;
 
   // upper

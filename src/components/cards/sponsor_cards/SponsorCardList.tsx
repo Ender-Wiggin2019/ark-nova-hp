@@ -1,19 +1,13 @@
-import { useQuery } from '@tanstack/react-query';
-import React, { useEffect, useMemo } from 'react';
+import React, { useEffect } from 'react';
 
 import CardList from '@/components/cards/shared/CardList';
+import { RatedSponsorCard } from '@/components/cards/sponsor_cards/RatedSponsorCard';
 
-import { fetchCardRatings } from '@/utils/fetch';
-
-import { RatedSponsorCard } from './RatedSponsorCard';
 import { useSponsorData } from './useSponsorData';
 
 import { CardSource } from '@/types/CardSource';
-import { IRating } from '@/types/IRating';
-import { ISponsorCard } from '@/types/ISponsorCard';
 import { SortOrder } from '@/types/Order';
 import { SponsorCard as SponsorCardType } from '@/types/SponsorCard';
-import { SponsorCard } from '@/types/SponsorCard';
 import {
   isAnimalTag,
   isContinentTag,
@@ -77,6 +71,8 @@ const filterSponsors = (
       (textFilter === '' ||
         sponsor.id.toLowerCase().includes(lowercaseFilter) ||
         sponsor.name.toLowerCase().includes(lowercaseFilter) ||
+        (sponsor.cnName &&
+          sponsor.cnName.toLowerCase().includes(lowercaseFilter)) ||
         (sponsor.effects !== undefined &&
           sponsor.effects.some((effect) =>
             effect.effectDesc.toLowerCase().includes(lowercaseFilter)
@@ -98,11 +94,6 @@ export const SponsorCardList: React.FC<SponsorCardListProps> = ({
   sortOrder = SortOrder.ID_ASC,
   strength = [0],
 }) => {
-  const shouldFetchRatings = true;
-  const { data: cardRatings } = useQuery(['cardRatings'], fetchCardRatings, {
-    enabled: shouldFetchRatings,
-    // staleTime: 60 * 1000,
-  });
   const sponsorsData = useSponsorData();
   const filteredSponsors = filterSponsors(
     sponsorsData,
@@ -113,69 +104,29 @@ export const SponsorCardList: React.FC<SponsorCardListProps> = ({
     strength
   );
 
-  const combineDataWithRatings = (
-    sponsors: SponsorCard[],
-    ratings: IRating[]
-  ): ISponsorCard[] => {
-    return sponsors.map((sponsor) => {
-      const rating = ratings.find((r) => r.cardid === sponsor.id);
-      return {
-        id: sponsor.id,
-        sponsorCard: sponsor,
-        rating: rating ? rating._avg.rating : null,
-        ratingCount: rating ? rating._count : null,
-      };
-    });
-  };
-
-  const initialSponsorCards: ISponsorCard[] = useMemo(() => {
-    return filteredSponsors.map((sponsor) => ({
-      id: sponsor.id,
-      sponsorCard: sponsor,
-      rating: null,
-      ratingCount: null,
-    }));
-  }, [filteredSponsors]);
-
-  const ratedSponsorCards: ISponsorCard[] = useMemo(() => {
-    if (!cardRatings) {
-      return initialSponsorCards;
-    }
-    return combineDataWithRatings(filteredSponsors, cardRatings);
-  }, [filteredSponsors, cardRatings]);
-
   useEffect(() => {
     onCardCountChange(filteredSponsors.length);
   }, [filteredSponsors, onCardCountChange]);
 
   switch (sortOrder) {
     case SortOrder.ID_ASC:
-      ratedSponsorCards.sort((a, b) => a.id.localeCompare(b.id));
+      filteredSponsors.sort((a, b) => a.id.localeCompare(b.id));
       break;
     case SortOrder.ID_DESC:
-      ratedSponsorCards.sort((a, b) => b.id.localeCompare(a.id));
-      break;
-    case SortOrder.RATING_DESC:
-      ratedSponsorCards.sort((a, b) => {
-        if ((b.rating ?? -1) !== (a.rating ?? -1)) {
-          return (b.rating ?? -1) - (a.rating ?? -1);
-        } else {
-          return (b.ratingCount ?? -1) - (a.ratingCount ?? -1);
-        }
-      });
+      filteredSponsors.sort((a, b) => b.id.localeCompare(a.id));
       break;
   }
 
   return (
     <CardList>
-      {ratedSponsorCards.map((ratedSponsorCard: ISponsorCard) => (
+      {filteredSponsors.map((sponsorCard: SponsorCardType) => (
         <div
-          key={ratedSponsorCard.id}
+          key={sponsorCard.id}
           className='-mb-12 scale-75 sm:mb-1 sm:scale-90 md:mb-4 md:scale-100'
         >
           <RatedSponsorCard
-            key={ratedSponsorCard.id}
-            cardData={ratedSponsorCard}
+            key={sponsorCard.id}
+            cardData={sponsorCard}
             showLink={true}
           />
         </div>

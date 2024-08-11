@@ -1,3 +1,10 @@
+/*
+ * @Author: Ender-Wiggin
+ * @Date: 2024-08-10 00:35:54
+ * @LastEditors: Ender-Wiggin
+ * @LastEditTime: 2024-08-12 01:46:38
+ * @Description:
+ */
 import { AnimalCard } from '@/types/AnimalCard';
 import { EndGameCard } from '@/types/EndGameCard';
 import { ProjectCard } from '@/types/ProjectCard';
@@ -22,7 +29,7 @@ export function isSponsorCard(card: Card): card is SponsorCard {
 }
 
 export function isProjectCard(card: Card): card is ProjectCard {
-  return (card as ProjectCard).slots !== undefined;
+  return (card as ProjectCard).type !== undefined;
 }
 
 export function isEndGameCard(card: Card): card is EndGameCard {

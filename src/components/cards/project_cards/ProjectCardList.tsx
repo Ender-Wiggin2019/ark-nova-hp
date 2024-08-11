@@ -1,3 +1,10 @@
+/*
+ * @Author: Ender-Wiggin
+ * @Date: 2024-08-10 00:35:54
+ * @LastEditors: Ender-Wiggin
+ * @LastEditTime: 2024-08-12 01:53:57
+ * @Description:
+ */
 import React, { useEffect } from 'react';
 
 import CardList from '@/components/cards/shared/CardList';
@@ -6,6 +13,7 @@ import { ProjectCard } from './ProjectCard';
 import { useProjectData } from './useProjectData';
 
 import { CardSource } from '@/types/CardSource';
+import { SortOrder } from '@/types/Order';
 import { ProjectCard as ProjectCardType } from '@/types/ProjectCard';
 import { Tag } from '@/types/Tags';
 
@@ -14,6 +22,7 @@ interface ProjectCardListProps {
   selectedRequirements?: Tag[];
   selectedCardSources?: CardSource[];
   textFilter?: string;
+  sortOrder?: SortOrder;
   onCardCountChange: (count: number) => void;
 }
 
@@ -38,6 +47,7 @@ export const ProjectCardList: React.FC<ProjectCardListProps> = ({
   selectedCardSources = [],
   textFilter,
   onCardCountChange,
+  sortOrder,
 }) => {
   const projectsData = useProjectData();
 
@@ -50,6 +60,15 @@ export const ProjectCardList: React.FC<ProjectCardListProps> = ({
   useEffect(() => {
     onCardCountChange(filteredConservations.length);
   }, [projectsData, onCardCountChange, filteredConservations.length]);
+
+  switch (sortOrder) {
+    case SortOrder.ID_ASC:
+      filteredConservations.sort((a, b) => a.id.localeCompare(b.id));
+      break;
+    case SortOrder.ID_DESC:
+      filteredConservations.sort((a, b) => b.id.localeCompare(a.id));
+      break;
+  }
 
   return (
     <CardList>

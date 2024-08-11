@@ -6,6 +6,7 @@ import { FiRotateCcw } from 'react-icons/fi';
 
 import { SortButton } from '@/components/buttons/SortButton';
 import { AnimalCardList } from '@/components/cards/animal_cards/AnimalCardList';
+import { ProjectCardList } from '@/components/cards/project_cards/ProjectCardList';
 import { SponsorCardList } from '@/components/cards/sponsor_cards/SponsorCardList';
 import { CardTypeFilter } from '@/components/filters/CardTypeFilter';
 import { RequirementFilter } from '@/components/filters/RequirementFilter';
@@ -160,6 +161,17 @@ export default function HomePage(
             sortOrder={sortOrder}
             onCardCountChange={setSponsorCardsCount}
             strength={strength}
+          />
+        )}
+        {(selectedCardTypes.length === 0 ||
+          selectedCardTypes.includes(CardType.CONSERVATION_CARD)) && (
+          <ProjectCardList
+            selectedTags={selectedTags}
+            selectedRequirements={selectedRequirements}
+            selectedCardSources={selectedCardSources}
+            textFilter={textFilter}
+            sortOrder={sortOrder}
+            onCardCountChange={setSponsorCardsCount}
           />
         )}
       </main>

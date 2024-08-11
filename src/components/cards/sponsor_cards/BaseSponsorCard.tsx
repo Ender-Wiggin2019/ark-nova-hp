@@ -2,9 +2,10 @@
  * @Author: Ender-Wiggin
  * @Date: 2024-08-10 00:35:54
  * @LastEditors: Ender-Wiggin
- * @LastEditTime: 2024-08-11 20:45:49
+ * @LastEditTime: 2024-08-11 23:46:33
  * @Description:
  */
+import Image from 'next/image';
 import { useTranslation } from 'next-i18next';
 import React from 'react';
 
@@ -23,6 +24,13 @@ export const BaseSponsorCard: React.FC<AnimalCardProps> = ({ sponsor }) => {
 
   return (
     <SponsorCardWrapper id={sponsor.id}>
+      <Image
+        src={sponsor.image || '/img/placeholder.png'}
+        alt='animal Image'
+        width={373}
+        height={497}
+        className='absolute rounded-md object-cover'
+      />
       <div className='ark-card-top'>
         <div className='ark-card-top-left sf-hidden'></div>
         <div className='ark-card-top-right'></div>

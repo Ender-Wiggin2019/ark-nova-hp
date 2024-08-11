@@ -1,3 +1,10 @@
+/*
+ * @Author: Ender-Wiggin
+ * @Date: 2024-08-10 00:35:54
+ * @LastEditors: Ender-Wiggin
+ * @LastEditTime: 2024-08-12 02:18:10
+ * @Description:
+ */
 import React from 'react';
 
 import { cn } from '@/lib/utils';
@@ -11,7 +18,7 @@ interface EffectProps {
   style: 'full' | 'short' | 'icon';
 }
 
-const EffectComponent: React.FC<EffectProps> = ({ effect, style }) => {
+const EffectComponent: React.FC<EffectProps> = ({ effect }) => {
   // const { t } = useTranslation();
 
   const effectClass = cn(`effect-${effect.effectType.toLowerCase()}`, {

@@ -23,7 +23,7 @@ export function SizeFilter({
 
   useEffect(() => {
     onFilterChange(size);
-  }, [size]);
+  }, [size, onFilterChange]);
 
   useEffect(() => {
     if (reset) {

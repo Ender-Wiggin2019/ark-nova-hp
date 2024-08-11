@@ -1,13 +1,12 @@
-import { Bonus } from '@/types/Bonus';
+/*
+ * @Author: Ender-Wiggin
+ * @Date: 2024-08-10 00:35:54
+ * @LastEditors: Ender-Wiggin
+ * @LastEditTime: 2024-08-12 01:45:28
+ * @Description:
+ */
 import { CardSource } from '@/types/CardSource';
-import { Effect } from '@/types/Effect';
-import { Tag } from '@/types/Tags';
 
-export interface ProjectSlot {
-  position: 1 | 2 | 3;
-  bonuses: Bonus[];
-  indicator?: number;
-}
 export enum ProjectCategory {
   BASE = 'Base',
   NORMAL = 'Normal',
@@ -19,12 +18,9 @@ export enum ProjectCategory {
 export interface ProjectCard {
   id: string;
   name: string;
+  cnName?: string;
   type: ProjectCategory;
   image?: string;
-  tag: Tag;
-  slots: ProjectSlot[];
-  placeBonuses: Bonus[];
-  description: Effect;
   // meta data
   source: CardSource;
 }

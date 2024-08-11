@@ -1,4 +1,5 @@
 // AnimalCard.tsx
+import Image from 'next/image';
 import { useTranslation } from 'next-i18next';
 import React from 'react';
 import { GiSevenPointedStar } from 'react-icons/gi';
@@ -18,13 +19,16 @@ interface AnimalCardProps {
 export const BaseAnimalCard: React.FC<AnimalCardProps> = ({ animal }) => {
   const { t } = useTranslation('common');
 
-  let dataSize = 1;
-  if (animal.reputation !== undefined) dataSize += 1;
-  if (animal.conservationPoint !== undefined) dataSize += 1;
-
   return (
     <>
       <AnimalCardWrapper id={animal.id}>
+        <Image
+          src={animal.image || '/img/placeholder.png'}
+          alt='animal Image'
+          width={373}
+          height={497}
+          className='absolute rounded-md object-cover'
+        />
         <div className='ark-card-top'>
           {/* {animal.image && (
             <Image

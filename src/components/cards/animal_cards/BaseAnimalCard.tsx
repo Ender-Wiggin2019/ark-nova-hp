@@ -27,6 +27,7 @@ export const BaseAnimalCard: React.FC<AnimalCardProps> = ({ animal }) => {
           alt='animal Image'
           width={373}
           height={497}
+          placeholder='empty'
           className='absolute rounded-md object-cover'
         />
         <div className='ark-card-top'>

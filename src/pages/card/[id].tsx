@@ -4,6 +4,8 @@ import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import React from 'react';
 
+import { getMdById } from '@/lib/getMdById';
+
 import { BaseAnimalCard } from '@/components/cards/animal_cards/BaseAnimalCard';
 import { AnimalModelCard } from '@/components/cards/animal_cards/models/AnimalModelCard';
 import { BaseEndGameCard } from '@/components/cards/endgame_cards/BaseEndGameCard';
@@ -11,6 +13,7 @@ import { EndGameHoverCard } from '@/components/cards/endgame_cards/EndGameHoverC
 import { BaseSponsorCard } from '@/components/cards/sponsor_cards/BaseSponsorCard';
 // make sure to import your TextFilter
 import Layout from '@/components/layout/Layout';
+import { MarkdownContainer } from '@/components/markdown-container/MarkdownContainer';
 import Seo from '@/components/Seo';
 
 import { getAllCardIds } from '@/utils/GetAllCardIds';
@@ -25,10 +28,10 @@ type Props = {
 };
 
 export default function Page(
-  _props: InferGetStaticPropsType<typeof getStaticProps>
+  props: InferGetStaticPropsType<typeof getStaticProps>
 ) {
   const router = useRouter();
-
+  console.log((props as any)?.content);
   /* {router.query.id} 根据这个获得AnimalCard*/
   const { t } = useTranslation('common');
   if (typeof router.query.id !== 'string') return null;
@@ -69,16 +72,13 @@ export default function Page(
             </div>
           ) : null}
         </div>
+        <div className='p-4'>
+          <MarkdownContainer md={(props as any)?.content} />
+        </div>
       </div>
     </Layout>
   );
 }
-
-export const getStaticProps: GetStaticProps<Props> = async ({ locale }) => ({
-  props: {
-    ...(await serverSideTranslations(locale ?? 'zh-CN', ['common'])),
-  },
-});
 
 // export async function getStaticPaths() {
 //   const paths = getAllCardIds();
@@ -106,3 +106,24 @@ export async function getStaticPaths({ locales }) {
     fallback: false,
   };
 }
+
+export const getStaticProps: GetStaticProps<Props> = async ({
+  params,
+  locale,
+}) => {
+  if (!params || typeof params.id !== 'string') {
+    return {
+      notFound: true,
+    };
+  }
+
+  const { id } = params;
+  // const md = getMdById(id);
+
+  return {
+    props: {
+      ...(await serverSideTranslations(locale ?? 'zh-CN', ['common'])),
+      ...(await getMdById(id)),
+    },
+  };
+};

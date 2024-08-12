@@ -43,6 +43,7 @@
     "dayjs": "^1.11.9",
     "embla-carousel-react": "^8.1.5",
     "framer-motion": "^10.12.18",
+    "gray-matter": "^4.0.3",
     "hashids": "^2.3.0",
     "html-to-image": "^1.11.11",
     "i18next": "^23.2.6",

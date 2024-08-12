@@ -3023,7 +3023,7 @@
 }
 
 .ark-card .ark-card-wrapper {
-  background-image: url(/img/card-backgrounds.jpg);
+  /* background-image: url(/img/card-backgrounds.jpg); */
   background-size: 700% 100%;
   border-radius: 8px;
   box-shadow: 2px 2px 4px -1px #000;

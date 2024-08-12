@@ -12,6 +12,7 @@ import { appWithTranslation } from 'next-i18next';
 import '@/styles/globals.css';
 import '@/styles/arknova.css';
 import '@/styles/odometer.css';
+import '@/styles/markdown.css';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (

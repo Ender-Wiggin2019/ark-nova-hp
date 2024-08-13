@@ -1,20 +1,27 @@
 .md-container h1 {
-  font-size: 2em;
+  font-size: 2.5em;
   font-weight: bold;
-  color: #fff;
-  margin-bottom: 0.5em;
+  color: #d2aa6b;
+  margin-bottom: 0.8em;
 }
 
 .md-container h2 {
   font-size: 1.5em;
   font-weight: bold;
   color: #fff;
-  margin-bottom: 0.3em;
+  margin-bottom: 0.5em;
+}
+
+.md-container h3 {
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 0.4em;
 }
 
 .md-container p {
   font-size: 1em;
-  line-height: 1.5;
+  line-height: 1.8;
   color: #fff;
   margin-bottom: 1em;
 }
@@ -50,5 +57,6 @@
 
 .md-container strong {
   font-weight: bold;
-  color: #d2aa6b;
+  /* color: #d2aa6b; */
+  color: #fff;
 }

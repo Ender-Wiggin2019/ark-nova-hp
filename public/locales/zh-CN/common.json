@@ -535,7 +535,8 @@
     "maps": "地图",
     "endgames": "终局计分",
     "random_quiz": "随机题目",
-    "daily_quiz": "每日挑战"
+    "daily_quiz": "每日挑战",
+    "terms": "术语"
   },
   "comment": {
     "login_to_comment": "登录后评论",

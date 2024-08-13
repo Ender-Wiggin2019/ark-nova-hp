@@ -38,7 +38,7 @@ const Content = React.forwardRef<
     <SelectPrimitive.Content
       ref={ref}
       className={cn(
-        'relative z-50 min-w-[8rem] overflow-hidden rounded-xl border border-stone-100 bg-white text-stone-700 shadow-xl animate-in fade-in-80 dark:border-stone-800 dark:bg-stone-900 dark:text-stone-300',
+        'relative z-50 mt-2 min-w-[8rem] overflow-hidden rounded-xl border-2 border-hp-ring bg-hp-dark text-stone-300 shadow-xl animate-in fade-in-80 dark:border-stone-800 dark:bg-stone-900 dark:text-stone-300',
         className
       )}
       {...props}
@@ -73,7 +73,7 @@ const Item = React.forwardRef<
   <SelectPrimitive.Item
     ref={ref}
     className={cn(
-      'relative z-50 flex cursor-default select-none items-center rounded-lg py-1.5 pl-8 pr-2 text-sm font-medium outline-none transition-colors focus:bg-stone-100 data-[disabled]:pointer-events-none data-[disabled]:opacity-50 dark:focus:bg-stone-800',
+      'relative z-50 flex cursor-default select-none items-center rounded-lg py-1.5 pl-8 pr-2 text-sm font-medium outline-none transition-colors focus:bg-hp-ring data-[disabled]:pointer-events-none data-[disabled]:opacity-50 dark:focus:bg-stone-800',
       'tracking-tight',
       className
     )}

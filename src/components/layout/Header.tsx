@@ -117,30 +117,21 @@ export function Header() {
             }}
           >
             <div className='relative flex gap-4'>
-              <motion.div
-                className='flex flex-1'
-                initial={{ opacity: 0, y: 15 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{
-                  type: 'spring',
-                  damping: 30,
-                  stiffness: 200,
-                }}
-              ></motion.div>
+              <div className='flex flex-1'></div>
               <div className='flex flex-1 justify-end md:justify-center'>
                 <NavigationBar.Mobile className='pointer-events-auto relative z-50 md:hidden' />
                 <NavigationBar.Desktop className='pointer-events-auto relative z-50 hidden md:block' />
               </div>
-              <motion.div
+              <div
                 className='flex justify-end gap-3 md:flex-1'
-                initial={{ opacity: 0, y: -20, scale: 0.95 }}
-                animate={{ opacity: 1, y: 0, scale: 1 }}
+                // initial={{ opacity: 0, y: -20, scale: 0.95 }}
+                // animate={{ opacity: 1, y: 0, scale: 1 }}
               >
                 <UserInfo />
                 <div className='pointer-events-auto'>
                   <LocaleSelector />
                 </div>
-              </motion.div>
+              </div>
             </div>
           </Container>
         </div>

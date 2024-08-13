@@ -4,7 +4,6 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import React, { useEffect, useState } from 'react';
 import { FiRotateCcw } from 'react-icons/fi';
 
-import { SortButton } from '@/components/buttons/SortButton';
 import { AnimalCardList } from '@/components/cards/animal_cards/AnimalCardList';
 import { ProjectCardList } from '@/components/cards/project_cards/ProjectCardList';
 import { SponsorCardList } from '@/components/cards/sponsor_cards/SponsorCardList';
@@ -46,6 +45,7 @@ export default function HomePage(
 
   const [animalCardsCount, setAnimalCardsCount] = useState<number>(0);
   const [sponsorCardsCount, setSponsorCardsCount] = useState<number>(0);
+  const [projectCardsCount, setProjectCardsCount] = useState<number>(0);
 
   useEffect(() => {
     if (
@@ -59,6 +59,12 @@ export default function HomePage(
       !selectedCardTypes.includes(CardType.SPONSOR_CARD)
     ) {
       setSponsorCardsCount(0);
+    }
+    if (
+      selectedCardTypes.length !== 0 &&
+      !selectedCardTypes.includes(CardType.CONSERVATION_CARD)
+    ) {
+      setProjectCardsCount(0);
     }
   }, [selectedCardTypes]);
 
@@ -89,7 +95,7 @@ export default function HomePage(
       <Seo />
 
       <main>
-        <div className='flex flex-col space-y-4 px-2 py-2 md:px-4'>
+        <div className='flex flex-col space-y-4 px-2 py-2 md:mt-4 md:px-4'>
           <div className='flex flex-col md:flex-row'>
             <CardTypeFilter
               cardTypes={[
@@ -121,7 +127,7 @@ export default function HomePage(
             </div>
           </div>
           <div className='flex flex-row space-x-4'>
-            <SortButton sortOrder={sortOrder} setSortOrder={setSortOrder} />
+            {/* <SortButton sortOrder={sortOrder} setSortOrder={setSortOrder} /> */}
             <SizeFilter onFilterChange={setSize} reset={reset} />
             <StrengthFilter onFilterChange={setStrength} reset={reset} />
           </div>
@@ -129,11 +135,16 @@ export default function HomePage(
             <CardOdometer
               value={animalCardsCount}
               name={t('Animal')}
-              className='text-amber-500 hover:text-amber-600'
+              className='text-amber-500 hover:text-hp-gold'
             />
             <CardOdometer
               value={sponsorCardsCount}
               name={t('Sponsor')}
+              className='text-sky-600 hover:text-sky-700'
+            />
+            <CardOdometer
+              value={projectCardsCount}
+              name={t('Project')}
               className='text-sky-600 hover:text-sky-700'
             />
           </div>
@@ -171,7 +182,7 @@ export default function HomePage(
             selectedCardSources={selectedCardSources}
             textFilter={textFilter}
             sortOrder={sortOrder}
-            onCardCountChange={setSponsorCardsCount}
+            onCardCountChange={setProjectCardsCount}
           />
         )}
       </main>

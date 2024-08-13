@@ -2,7 +2,7 @@
  * @Author: Ender-Wiggin
  * @Date: 2024-08-10 00:35:54
  * @LastEditors: Ender-Wiggin
- * @LastEditTime: 2024-08-12 01:56:15
+ * @LastEditTime: 2024-08-14 01:58:00
  * @Description:
  */
 // ProjectCard.tsx
@@ -32,12 +32,12 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
       <div className='ark-card-top'>
         <div className='ark-card-top-right'></div>
       </div>
-      <div className='ark-card-middle'>
+      {/* <div className='ark-card-middle'>
         <div className='ark-card-number sf-hidden'>{project.id}</div>
         <div className='ark-card-title-wrapper'>
           <div className='ark-card-title'>{t(project.cnName || '')}</div>
         </div>
-      </div>
+      </div> */}
     </ProjectCardWrapper>
   );
 };

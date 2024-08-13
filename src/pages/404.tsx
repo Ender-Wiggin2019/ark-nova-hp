@@ -1,3 +1,10 @@
+/*
+ * @Author: Ender-Wiggin
+ * @Date: 2024-08-10 00:35:54
+ * @LastEditors: Ender-Wiggin
+ * @LastEditTime: 2024-08-14 02:43:38
+ * @Description:
+ */
 import { GetStaticProps, InferGetStaticPropsType } from 'next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import * as React from 'react';
@@ -16,7 +23,7 @@ export default function NotFoundPage(
 
       <main>
         <section className='bg-white/0'>
-          <div className='layout flex min-h-screen flex-col items-center justify-center text-center text-black'>
+          <div className='layout flex min-h-screen flex-col items-center justify-center text-center text-white'>
             <RiAlarmWarningFill
               size={60}
               className='drop-shadow-glow animate-flicker text-red-500'

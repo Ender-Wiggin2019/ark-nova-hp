@@ -2,7 +2,7 @@
  * @Author: Ender-Wiggin
  * @Date: 2024-08-10 00:35:54
  * @LastEditors: Ender-Wiggin
- * @LastEditTime: 2024-08-14 01:16:30
+ * @LastEditTime: 2024-08-14 01:51:58
  * @Description:
  */
 import type { GetStaticProps, InferGetStaticPropsType } from 'next';
@@ -21,7 +21,7 @@ type Props = {
   // Add custom props here
 };
 
-export default function About(
+export default function Terms(
   props: InferGetStaticPropsType<typeof getStaticProps>
 ) {
   const { t } = useTranslation('common');
@@ -45,7 +45,7 @@ export const getStaticProps: GetStaticProps<Props> = async ({ locale }) => {
   return {
     props: {
       ...(await serverSideTranslations(locale ?? 'zh-CN', ['common'])),
-      ...(await getMdById('about')), // FIXME: 同步文件名
+      ...(await getMdById('terms')), // FIXME: 同步文件名
     },
   };
 };

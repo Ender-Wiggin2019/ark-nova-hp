@@ -39,9 +39,11 @@ export default function Page(
   if (typeof card !== 'object') return null;
   return (
     <Layout>
-      <Seo templateTitle={`Ark Nova Card #${card.id} ${card.name}`} />
+      <Seo
+        templateTitle={`Ark Nova: Fantastic Beasts #${card.id} ${card.name}`}
+      />
       <div className='mb-24 flex flex-col'>
-        <div className='flex flex-col items-center py-24 md:py-36 lg:pb-48 lg:pt-36'>
+        <div className='flex flex-col items-center py-24 md:py-36 lg:pb-36 lg:pt-36'>
           {getCardTypeById(router.query.id) === CardType.ANIMAL_CARD ? (
             <div className='flex flex-row md:scale-125 lg:scale-150'>
               <div className='mr-3 flex-initial md:mr-10 lg:mr-20'>

@@ -22,17 +22,19 @@ function NavItem({
       <Link
         href={href}
         className={cn(
-          'relative block whitespace-nowrap px-3 py-2 transition',
-          isActive ? 'text-hp-gold' : 'hover:text-hp-gold'
+          'relative block whitespace-nowrap px-5 py-2 transition',
+          isActive
+            ? 'hp-button rounded-full text-hp-gold'
+            : 'hover:text-hp-gold'
         )}
       >
         {children}
-        {isActive && (
+        {/* {isActive && (
           <motion.span
             className='hp-golden absolute inset-x-1 bottom-1 h-px'
             layoutId='active-nav-item'
           />
-        )}
+        )} */}
       </Link>
     </li>
   );
@@ -78,7 +80,7 @@ function Desktop({
         aria-hidden='true'
       />
 
-      <ul className='flex bg-transparent px-3 text-sm font-medium text-white dark:text-zinc-200 '>
+      <ul className='flex bg-transparent p-1 text-sm font-medium text-white dark:text-zinc-200'>
         {navigationItems.map(({ href, text }) => (
           <NavItem key={href} href={href}>
             {t(text)}

@@ -34,5 +34,5 @@ yarn
 **2. Run App**
 
 ```bash
-npm run dev
+yarn dev
 ```

@@ -5,7 +5,6 @@
  * @LastEditTime: 2024-08-14 01:33:41
  * @Description:
  */
-// import { Analytics } from '@vercel/analytics/react';
 import React, { Suspense } from 'react';
 
 import { Header } from '@/components/layout/Header';

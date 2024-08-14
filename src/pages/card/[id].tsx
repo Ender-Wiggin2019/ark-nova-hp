@@ -7,7 +7,6 @@ import React from 'react';
 import { getMdById } from '@/lib/getMdById';
 
 import { BaseAnimalCard } from '@/components/cards/animal_cards/BaseAnimalCard';
-import { AnimalModelCard } from '@/components/cards/animal_cards/models/AnimalModelCard';
 import { BaseEndGameCard } from '@/components/cards/endgame_cards/BaseEndGameCard';
 import { EndGameHoverCard } from '@/components/cards/endgame_cards/EndGameHoverCard';
 import { BaseSponsorCard } from '@/components/cards/sponsor_cards/BaseSponsorCard';
@@ -42,14 +41,13 @@ export default function Page(
       <Seo
         templateTitle={`Ark Nova: Fantastic Beasts #${card.id} ${card.name}`}
       />
-      <div className='mb-24 flex flex-col'>
-        <div className='flex flex-col items-center py-24 md:py-36 lg:pb-36 lg:pt-36'>
+      <div className='mt-20 flex flex-col'>
+        <div className='flex flex-col items-center justify-center md:h-[400px] lg:h-[500px]'>
           {getCardTypeById(router.query.id) === CardType.ANIMAL_CARD ? (
-            <div className='flex flex-row md:scale-125 lg:scale-150'>
-              <div className='mr-3 flex-initial md:mr-10 lg:mr-20'>
+            <div className='md:scale-125 lg:scale-150'>
+              <div>
                 <BaseAnimalCard animal={card as AnimalCardType} />
               </div>
-              <AnimalModelCard id={card.id} showLink={false} />
             </div>
           ) : null}
 

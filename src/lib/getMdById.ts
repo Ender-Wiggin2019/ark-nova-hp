@@ -27,7 +27,7 @@ export async function getMdById(id: string) {
       content,
     };
   } catch (error) {
-    console.error(`Error reading file for id: ${id}`, error);
+    // console.error(`Error reading file for id: ${id}`, error);
     return null;
   }
 }
